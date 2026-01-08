@@ -1,0 +1,13 @@
+/* WHY?! why does this work?! why does forest green NOT need it like this: "ul LI ol li" to work?!*/
+
+ul ol li {
+    color: forestgreen;
+}
+
+ul li {
+    color: red;
+}
+
+ol+li {
+    color: blue;
+}
