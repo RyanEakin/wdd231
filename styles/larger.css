@@ -1,7 +1,11 @@
-@media (min-width: 350px) {
+@media (min-width: 1000px) {
 
     header {
         background-color: white;
+    }
+
+    nav {
+        color: black;
     }
 
     nav a {
@@ -44,9 +48,12 @@
     }
 
     .bar {
+        display: flex;
+        flex-direction: row;
         padding-top: 10px;
         padding-bottom: 10px;
         background-color: black;
+        color: white;
     }
 
     .bar a:hover {
@@ -101,5 +108,13 @@
 
 
     /*End of Class Rules*/
+
+    /*Start of ID Rules*/
+
+    #menu {
+        display: none;
+    }
+
+    /*End of ID Rules*/
 
 }

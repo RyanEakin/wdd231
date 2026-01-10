@@ -26,17 +26,20 @@
 <body>
 
     <header>
+
         <nav>
             <div class="logo">
                 <a href="index.html"><img src="images/box-archive.svg" alt="logo" width="35" height="35"></a>
                 <span>Ryan Eakin</span>
             </div>
+            <button id="menu"></button>
             <div class="bar">
-                <a href="index.html">Home</a>
+                <a href="index.html" class="active">Home</a>
                 <a href="#">Chamber Project</a>
                 <a href="#">Final Project</a>
             </div>
         </nav>
+
     </header>
 
     <main>
@@ -64,6 +67,18 @@
 
         <section class="certs">
             <h2>Web Certificate Courses</h2>
+            <div class="course-buttons">
+                <button>
+                    All Courses
+                </button>
+                <button>
+                    WDD Courses
+                </button>
+                <button>
+                    CSE Courses
+                </button>
+            </div>
+            <p>Total credits for courses listed below is <span id="course-listed"></span></p>
             <ul id="course-cert"></ul>
         </section>
     </main>
