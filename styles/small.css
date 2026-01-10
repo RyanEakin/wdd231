@@ -144,7 +144,7 @@ footer {
     flex-wrap: wrap;
 }
 
-#course-cert p {
+#course-cert li {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -153,6 +153,7 @@ footer {
     border-radius: 15px;
     width: 100%;
     height: 50px;
+    margin: 10px;
     font-size: large;
     align-content: center;
 }
