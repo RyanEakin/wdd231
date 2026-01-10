@@ -115,7 +115,7 @@ function showCourses(filteredCourses) {
 
 
         block.appendChild(name);
-        document.getElementById('course-cert').appendChild(block);
+        document.getElementById('course-cert').appendChild(block)
 
 
     })
