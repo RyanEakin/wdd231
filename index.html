@@ -25,10 +25,10 @@
 
 <body>
     <header>
-        <section class="logo">
-            <a href="index.html"><img src="images/box-archive-solid-full.svg" alt="logo"></a>
+        <div class="logo">
+            <a href="index.html"><img src="images/box-archive.svg" alt="logo" width="35" height="35"></a>
             <p>Student Home Page</p>
-        </section>
+        </div>
         <nav>
             <a href="index.html">Home</a>
             <a href="#">Chamber Project</a>
@@ -36,40 +36,45 @@
             <a href="#"></a>
         </nav>
     </header>
-    <h1>Home</h1>
-    <div class="flex-contain">
-        <section class="life">
-            <h2>About Me</h2>
-            <p>I [Ryan Eakin] am taking a course on computer science... and realize the sillyness of placing on public
-                sites, personal info on the net [yes this IS public]. though I can already tell you that I have
-                completed as of writing these courses related to web development:</p>
-            <p>1. WDD 130 web fundementals</p>
-            <p>2. WDD 131 dynamic web fundementals</p>
-            <p>3. WDD 231 front-end web-dev I(in progress)</p>
-            <p>
-                Hope you have a great day & Safe Travels!</p>
+
+    <main>
+        <h1>Home</h1>
+        <div class="flex-contain">
+            <section class="life">
+                <h2>About Me</h2>
+                <p>I [Ryan Eakin] am taking a course on computer science... and realize the sillyness of placing on
+                    public
+                    sites, personal info on the net [yes this IS public]. though I can already tell you that I have
+                    completed as of writing these courses related to web development:</p>
+                <p>1. WDD 130 web fundementals</p>
+                <p>2. WDD 131 dynamic web fundementals</p>
+                <p>3. WDD 231 front-end web-dev I (in progress)</p>
+                <p>
+                    Hope you have a great day & Safe Travels!</p>
+            </section>
+            <section class="face">
+                <h2>Student Photo</h2>
+                <img src="images/profile.webp" alt="Student's Photo" width="300" height="400">
+            </section>
+        </div>
+        <section class="certs">
+            <h2>Web Certificate Courses</h2>
+            <ul id=""></ul>
         </section>
-        <section class="face">
-            <h2>Student Photo</h2>
-            <img src="images/profile.webp" alt="Student's Photo">
-        </section>
-    </div>
-    <section class="certs">
-        <h2>Web Certificate Courses</h2>
-    </section>
     </main>
+
     <footer>
-        <section class="socialmedia">
+        <div class="socialmedia">
             <a href="https://www.x.com">
-                <img src="images/x-twitter-logo.svg" alt="Twitter/X">
+                <img src="images/x-twitter-logo.svg" alt="Twitter/X" width="120" height="120">
             </a>
             <a href="https://www.github.com">
-                <img src="images/github-logo.svg" alt="GitHub">
+                <img src="images/github-logo.svg" alt="GitHub" width="120" height="120">
             </a>
             <a href="https://www.linkedin.com">
-                <img src="images/linkdin-logo.svg" alt="Linkedin">
+                <img src="images/linkdin-logo.svg" alt="Linkedin" width="120" height="120">
             </a>
-        </section>
+        </div>
         <p><span id="currentYear"></span>, Ryan Michael Eakin, United States</p>
         <p id="lastModified"></p>
     </footer>
