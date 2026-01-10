@@ -34,7 +34,7 @@ const courses = [
         technology: [
             'Python'
         ],
-        true: true
+        completed: true
     },
     {
         subject: 'CSE',
@@ -46,7 +46,7 @@ const courses = [
         technology: [
             'C#'
         ],
-        true: true
+        completed: true
     },
     {
         subject: 'WDD',
@@ -60,7 +60,7 @@ const courses = [
             'CSS',
             'JavaScript'
         ],
-        true: true
+        completed: true
     },
     {
         subject: 'WDD',
@@ -74,7 +74,7 @@ const courses = [
             'CSS',
             'JavaScript'
         ],
-        true: false
+        completed: false
     }
 ];
 
@@ -102,14 +102,24 @@ function showCourses(filteredCourses) {
         let block = document.createElement("li");
 
         let name = document.createElement("p");
-        name.textContent = `${courseName.subject} ${courseName.number}`;
+        if (courseName.completed == true) {
+            name.textContent = `✔ ${courseName.subject} ${courseName.number}`;
+        }
+        else {
+            name.textContent = `${courseName.subject} ${courseName.number}`;
+        }
+        //creditTotal = creditTotal + courseName.credits; this worked esaily, but then I had to "reduce"... great.
+        creditTotal = filteredCourses.reduce((p, c) => {
+            return p + c.credits;
+        }, 0);
 
-        creditTotal = creditTotal + courseName.credits;
 
         block.appendChild(name);
         document.getElementById('course-cert').appendChild(name)
 
+
     })
+
     document.getElementById('course-listed').innerHTML = `Total credits for courses listed below is ${creditTotal}`;
 };
 
