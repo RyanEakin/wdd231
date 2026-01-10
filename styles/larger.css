@@ -1,22 +1,10 @@
 @media (min-width: 350px) {
 
-    nav {
-        background-color: black;
-        color: white;
-        padding-top: 10px;
-        padding-bottom: 10px;
-
-    }
-
     nav a {
         color: white;
         padding: 10px;
         text-decoration: none;
         font-size: large;
-    }
-
-    nav a:hover {
-        background-color: grey;
     }
 
     h1 {
@@ -49,6 +37,16 @@
     .logo img {
         width: 35px;
         max-height: fit-content;
+    }
+
+    .bar {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: black;
+    }
+
+    .bar a:hover {
+        background-color: grey;
     }
 
     .flex-contain {

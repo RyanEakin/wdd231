@@ -14,7 +14,7 @@
     <script src="scripts/navigation.js" defer></script>
 
     <link rel="stylesheet" href="styles/small.css">
-    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/larger.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
@@ -24,22 +24,25 @@
 </head>
 
 <body>
+
     <header>
-        <div class="logo">
-            <a href="index.html"><img src="images/box-archive.svg" alt="logo" width="35" height="35"></a>
-            <p>Student Home Page</p>
-        </div>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="#">Chamber Project</a>
-            <a href="#">Final Project</a>
-            <a href="#"></a>
+            <div class="logo">
+                <a href="index.html"><img src="images/box-archive.svg" alt="logo" width="35" height="35"></a>
+                <span>Ryan Eakin</span>
+            </div>
+            <div class="bar">
+                <a href="index.html">Home</a>
+                <a href="#">Chamber Project</a>
+                <a href="#">Final Project</a>
+            </div>
         </nav>
     </header>
 
     <main>
         <h1>Home</h1>
         <div class="flex-contain">
+
             <section class="life">
                 <h2>About Me</h2>
                 <p>I [Ryan Eakin] am taking a course on computer science... and realize the sillyness of placing on
@@ -52,14 +55,16 @@
                 <p>
                     Hope you have a great day & Safe Travels!</p>
             </section>
+
             <section class="face">
                 <h2>Student Photo</h2>
                 <img src="images/profile.webp" alt="Student's Photo" width="300" height="400">
             </section>
         </div>
+
         <section class="certs">
             <h2>Web Certificate Courses</h2>
-            <ul id=""></ul>
+            <ul id="course-cert"></ul>
         </section>
     </main>
 
@@ -78,6 +83,7 @@
         <p><span id="currentYear"></span>, Ryan Michael Eakin, United States</p>
         <p id="lastModified"></p>
     </footer>
+
 </body>
 
 </html>

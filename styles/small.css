@@ -4,22 +4,11 @@
     box-sizing: border-box;
 }
 
-nav {
-    background-color: grey;
-    padding-top: 10px;
-    padding-bottom: 10px;
-
-}
-
 nav a {
     color: white;
     padding: 10px;
     text-decoration: none;
     font-size: large;
-}
-
-nav a:hover {
-    background-color: grey;
 }
 
 h1 {
@@ -52,6 +41,16 @@ footer {
 .logo img {
     width: 35px;
     max-height: fit-content;
+}
+
+.bar {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: darkgrey;
+}
+
+.bar a:hover {
+    background-color: blue;
 }
 
 .flex-contain {
