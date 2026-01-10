@@ -76,6 +76,41 @@ const courses = [
         ],
         true: false
     }
-]
+];
 
 
+const wddButton = document.getElementById('wdd');
+const cseButton = document.getElementById('cse');
+const allButton = document.getElementById('all');
+
+const list = document.getElementById('course-cert');
+
+
+wddButton.addEventListener('click', () => { showCourses(courses.filter(courseName => courseName.subject == "WDD")) });
+
+cseButton.addEventListener('click', () => { showCourses(courses.filter(courseName => courseName.subject == "CSE")) });
+
+allButton.addEventListener('click', () => { showCourses(courses) });
+
+
+function showCourses(filteredCourses) {
+    document.getElementById('course-cert').innerHTML = "";
+    document.getElementById('course-listed').innerHTML = "";
+    let creditTotal = 0;
+
+    filteredCourses.forEach(courseName => {
+        let block = document.createElement("li");
+
+        let name = document.createElement("p");
+        name.textContent = `${courseName.subject} ${courseName.number}`;
+
+        creditTotal = creditTotal + courseName.credits;
+
+        block.appendChild(name);
+        document.getElementById('course-cert').appendChild(name)
+
+    })
+    document.getElementById('course-listed').innerHTML = `Total credits for courses listed below is ${creditTotal}`;
+};
+
+showCourses(courses);
