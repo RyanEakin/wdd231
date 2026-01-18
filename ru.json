@@ -1,0 +1,27 @@
+{
+"family name": "spaghets",
+"movein date": "Sept, 11th, 2002",
+"family amount": 4,
+"bishopric visit": true,
+"family-data": [ {
+    "name": "mr. Spaghets",
+    "gender": "male",
+    "birthdate": "Feb, 5th, 1975"
+},
+{
+    "name": "Mrs. Spaghets",
+    "gender": "female",
+    "birthdate": "Dec, 23rd, 1980"
+},
+{
+    "name": "Jonny Spaghets",
+    "gender": "male",
+    "birthdate": "Oct, 15th, 2001"
+},
+{
+    "name": "Lucy Spaghets",
+    "gender": "female",
+    "birthdate": "Jul, 2nd, 2002"
+}]
+
+}
