@@ -1,0 +1,12 @@
+{
+    "insertCompany": [
+        {
+            "name": 1,
+            "address": 1,
+            "phone": 1,
+            "websiteURL": 1,
+            "imageName": 1,
+            "memberLevel": 1
+        }
+    ]
+}

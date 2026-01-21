@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {}
+
+main {
+    display: grid;
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+    gap: 8px;
+    /* Optional: adds space between cards */
+    padding: 16px;
+    /* Optional: adds space around the grid */
+    box-shadow: 0 0 30px gray;
+
+}
+
+section {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    gap: 8px;
+    background-color: #b9b9cc;
+    margin: 2px;
+    border: 1px solid #454592;
+    padding: 1rem;
+    width: fit-content;
+    overflow: hidden;
+}
+
+h1,
+h2 {
+    color: #454592;
+    text-align: center;
+}
+
+img {
+    width: 340px;
+    height: 440px;
+    border: 1px solid rgb(0 0 0 / 0%);
+    box-shadow: 0 0 30px gray;
+}
+
+footer {}
