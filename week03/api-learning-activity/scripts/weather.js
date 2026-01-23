@@ -1,4 +1,4 @@
-const url = '//api.openweathermap.org/data/2.5/weather?lat=49.75&lon=6.64&units=imperial&appid=INSERT_OPENWEATHER_API_KEY_HERE'
+const url = '//api.openweathermap.org/data/2.5/weather?lat=49.75&lon=6.64&units=imperial&appid=dbaf0c6e7f36fcf8c3dec7dd079ea6c1'
 // no need for https protocol portion, automatically makes it or uses most appropriate protocol
 
 const temperature = document.getElementById('current-temp');
