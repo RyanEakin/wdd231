@@ -1,0 +1,9 @@
+steps: 
+  - name: Open_Weather_API_Secret_test
+    working-directory: ./week03/api-learning-activity
+    run: npm run deploy
+    env:
+      token: ${{ secrets.INSERT_OPENWEATHER_API_KEY_HERE }}
+       # deploy token is used to build and deploy to a gh-pages branch 
+       # (needs permission to create a branch, build the app and modify that branch, 
+       # push changes to that branch, and deploy to github pages)
