@@ -26,17 +26,6 @@ main {
     display: grid;
 }
 
-#cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
-    gap: 8px;
-    /* Optional: adds space between cards */
-    padding: 16px;
-    /* Optional: adds space around the grid */
-    box-shadow: 0 0 30px gray;
-
-}
-
 section {
     display: grid;
     justify-content: center;
@@ -56,47 +45,113 @@ h2 {
     text-align: center;
 }
 
-img {
+section img {
     width: 340px;
     height: 440px;
     border: 1px solid rgb(0 0 0 / 0%);
-    box-shadow: 0 0 30px gray;
+
 }
 
 footer {
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
 }
 
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+    gap: 8px;
+    /* Optional: adds space between cards */
+    padding: 16px;
+    /* Optional: adds space around the grid */
+    box-shadow: 0 0 30px gray;
+
+}
+
+#mode-toggle {
+    border: none;
+    background: none;
+}
+
+#mode-toggle img {
+    width: auto;
+    height: 30px;
+
+}
+
+#mode-toggle:hover img,
+.logo img:hover {
+    background-color: grey;
+}
 
 .bar {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    justify-content: flex-end;
+    padding-right: 10px;
     background-color: black;
     color: white;
 }
 
 .bar a {
     text-decoration: none;
+    padding-right: 10px;
     color: white;
 }
 
-.bar a:hover {}
 
 
 .logo {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
     display: flex;
     padding: 5px;
     align-items: center;
 }
 
 .logo a {
+    color: white;
     text-decoration: none;
 }
 
 .logo img {
+    color: white;
     width: 35px;
     max-height: fit-content;
+}
+
+
+.logo span {
+    padding-left: 16px;
+}
+
+.active {
+    text-decoration: underline;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia img {
+    max-width: 100px;
+    max-height: fit-content;
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: white;
+    padding-left: 8px;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "❎";
 }
