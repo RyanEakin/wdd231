@@ -43,8 +43,8 @@ main {
 
 
 button {
-    background-color: orange;
-    color: black;
+    background-color: var(--sub-heading-color);
+    color: var(--text-color);
     border-radius: 15px;
     width: 30%;
     height: 50px;
@@ -130,11 +130,6 @@ footer {
 
 }
 
-
-#compact &>* {
-    margin: 0 1rem;
-}
-
 #compact img {
     display: none;
 }
@@ -165,9 +160,7 @@ footer {
     white-space: nowrap;
 }
 
-#compact &:nth-child(even) {
-    background-color: #bbb;
-}
+
 
 
 
