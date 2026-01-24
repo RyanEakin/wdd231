@@ -25,27 +25,10 @@
         display: none;
     }
 
-    .flex-contain {
-        display: flex;
-        flex-direction: row;
-    }
 
-    .course-buttons {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        margin-top: 10px;
-    }
 
-    .course-buttons button {
-        background-color: orange;
-        color: black;
-        border-radius: 15px;
-        width: 30%;
-        height: 50px;
-        font-size: large;
-        justify-content: space-around;
-    }
+
+
 
     .socialmedia {
         display: flex;

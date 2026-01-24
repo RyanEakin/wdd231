@@ -41,6 +41,17 @@ main {
 
 
 
+
+button {
+    background-color: orange;
+    color: black;
+    border-radius: 15px;
+    width: 30%;
+    height: 50px;
+    font-size: large;
+    justify-content: space-around;
+}
+
 h1 {
     color: var(--text-light);
     text-align: center;
@@ -100,6 +111,10 @@ footer {
     text-decoration: underline;
 }
 
+#list-view {
+    justify-self: center;
+    margin-bottom: 16px;
+}
 
 #compact {
     display: flex;

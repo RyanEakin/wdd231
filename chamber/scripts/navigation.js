@@ -4,7 +4,8 @@ const navigation = document.querySelector(".bar");
 const twilight = document.getElementById("mode-toggle")
 const content = document.querySelector("body")
 
-const list = document.querySelector(".compact");
+const toggle = document.getElementById("list-view");
+const list = document.querySelector(".cards");
 
 hamButton.addEventListener("click", () => {
     navigation.classList.toggle("open");
@@ -14,4 +15,12 @@ hamButton.addEventListener("click", () => {
 twilight.addEventListener("click", () => {
     content.classList.toggle("light-mode");
     content.classList.toggle("dark-mode");;
+});
+
+toggle.addEventListener("click", () => {
+    if (document.getElementById("compact")) {
+        list.removeAttribute('id');
+    } else {
+        list.setAttribute('id', 'compact');
+    }
 });
