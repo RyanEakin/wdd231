@@ -19,6 +19,8 @@
 
     <link rel="stylesheet" href="styles/directory.css">
     <link rel="stylesheet" href="styles/larger-directory.css">
+
+    <script src="scripts/navigation.js" defer></script>
     <script src="scripts/dates.js" defer></script>
     <script src="scripts/chamber.js" defer></script>
 
@@ -29,45 +31,56 @@
 
 
 
-    <title>Directory | Chamber of Commerce</title>
+    <title>Directory | U.S. Chamber of Commerce</title>
 </head>
 
-<body>
+<body class="light-mode">
     <header>
-        <div class="logo">
-            <a href="index.html"><img src="images/chamber.png" alt="logo" width="35px" height="35px">Chamber of
-                Commerce</a>
-
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img src="images/chamber.png" alt="logo" width="35" height="35"> U.S. Chamber of
+                    Commerce</a>
+                <div class="toggles">
+                    <a href="index.html">Home</a>
+                    <a href="#">Discover</a>
+                    <a href="directory.html" class="active">Directory</a>
+                    <a href="#">Join</a>
+                    <button id="mode-toggle"><img src="images/twilight.png" alt="light/dark-toggle"></button>
+                    <button aria-label="Menu" id="menu"></button>
+                </div>
+            </div>
             <div class="bar">
                 <a href="index.html">Home</a>
                 <a href="#">Discover</a>
-                <a href="#" class="active">Directory</a>
+                <a href="directory.html" class="active">Directory</a>
                 <a href="#">Join</a>
-                <button id="mode-toggle"><img src="images/twilight.png" alt="light/dark-toggle"></button>
-                <button aria-label="Menu" id="menu"></button>
             </div>
-        </div>
+        </nav>
     </header>
     <main>
         <h1>Directory</h1>
         <div id="cards"></div>
     </main>
     <footer>
-        <div>
-            <p>hello!</p>
+        <div id="footer-left">
+            <p>U.S. Chamber of Commerce</p>
+            <p>1615 H Street NW</p> <!--address-->
+            <p>Washington, D.C, U.S.</p> <!--state,city-->
+            <p>Small Business Email: smallbusiness@uschamber.com</p> <!--email-->
+            <p>202-659-6000 </p> <!--phone number-->
         </div>
         <div class="socialmedia">
             <a href="https://www.x.com">
-                <img src="images/x-twitter-logo.svg" alt="Twitter/X" width="120" height="120">
+                <img src="images/x-twitter-logo.png" alt="Twitter/X" width="120" height="120" loading="lazy">
             </a>
             <a href="https://www.github.com">
-                <img src="images/github-logo.svg" alt="GitHub" width="120" height="120">
+                <img src="images/github-logo.png" alt="GitHub" width="120" height="120" loading="lazy">
             </a>
             <a href="https://www.linkedin.com">
-                <img src="images/linkdin-logo.svg" alt="Linkedin" width="120" height="120">
+                <img src="images/linkdin-logo.png" alt="Linkedin" width="120" height="120" loading="lazy">
             </a>
         </div>
-        <div>
+        <div id="footer-right">
             <p>WDD231 Class Project</p>
             <p>Ryan Eakin</p>
             <p><span id="currentYear"></span> Chamber of Commerce</p>
