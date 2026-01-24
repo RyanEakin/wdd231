@@ -1,78 +1,73 @@
 {
-    "0": [
+    "members": [
         {
             "name": "Harber-Littel",
             "address": "3442 Magnolia Dr",
             "state": "Ider, Alabama(AL),35981",
             "phone": "(256) 632-3899",
+            "email": "store@Harber-Littel.com/",
             "websiteURL": "https://www.Harber-Littel.com/",
-            "imageName": 1,
+            "imageName": "placeholder",
             "memberLevel": 3
-        }
-    ],
-    "1": [
+        },
         {
             "name": "Hyatt-Schaden",
             "address": "503 Lakeshore Dr",
             "state": "Medway, Ohio(OH), 45341",
             "phone": "(937) 849-9458",
+            "email": "store@Hyatt-Schaden.com/",
             "websiteURL": "https://www.Hyatt-Schaden.com/",
-            "imageName": 1,
+            "imageName": "placeholder",
             "memberLevel": 1
-        }
-    ],
-    "2": [
+        },
         {
             "name": "Torp, Price and Corkery",
             "address": "1259 N Buckner St",
             "state": "Derby, Kansas(KS), 67037",
             "phone": "(316) 789-9694",
+            "email": "store@Torp-Price-and-Corkery.com/",
             "websiteURL": "https://www.Torp-Price-and-Corkery.com/",
-            "imageName": 1,
+            "imageName": "placeholder",
             "memberLevel": 2
-        }
-    ],
-    "3": [
+        },
         {
             "name": "Boehm and Sons",
             "address": "15161 Pond Village",
             "state": "Taylor, Michigan(MI), 48180",
             "phone": "(734) 992-3187",
+            "email": "store@Boehm-and-Sons.com/",
             "websiteURL": "https://www.Boehm-and-Sons.com/",
-            "imageName": 1,
+            "imageName": "placeholder",
             "memberLevel": 3
-        }
-    ],
-    "4": [
+        },
         {
             "name": "Wisoky-Pfannerstill",
             "address": "4504 Fallow Way",
             "state": "Antioch, California(CA), 94509",
             "phone": "(925) 757-3607",
+            "email": "store@Wisoky-Pfannerstill.com/",
             "websiteURL": "https://www.Wisoky-Pfannerstill.com/",
-            "imageName": 1,
+            "imageName": "placeholder",
             "memberLevel": 2
-        }
-    ],
-    "5": [
+        },
         {
             "name": "Walsh-Howell",
             "address": "1016 Panda Rd",
             "state": "Venice, Florida(FL), 34293",
             "phone": "(941) 445-4539",
+            "email": "store@Walsh-Howell.com/",
             "websiteURL": "https://www.Walsh-Howell.com/",
-            "imageName": 1,
+            "imageName": "placeholder",
             "memberLevel": 1
-        }
-    ],
-    "6": [
+        },
         {
             "name": "Greenfelder, Parker and Hermiston",
             "address": "205 College St",
             "state": "Red Oak, Texas(TX), 75154",
             "phone": "(972) 576-8961",
+            "email": "store@GP-Hermiston.com/",
             "websiteURL": "https://www.GP-Hermiston.com/",
-            "imageName": 1,
+            "imageName": "placeholder",
             "memberLevel": 3
         }
     ]

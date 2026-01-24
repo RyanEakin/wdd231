@@ -4,6 +4,8 @@ const navigation = document.querySelector(".bar");
 const twilight = document.getElementById("mode-toggle")
 const content = document.querySelector("body")
 
+const list = document.querySelector(".compact");
+
 hamButton.addEventListener("click", () => {
     navigation.classList.toggle("open");
     hamButton.classList.toggle("open");
