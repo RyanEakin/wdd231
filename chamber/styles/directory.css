@@ -119,53 +119,58 @@ footer {
 #compact {
     display: flex;
     flex-direction: column;
-
-    section {
-        display: flex;
-        flex-direction: row;
-        margin: 0;
-        padding: 0.25rem;
-        width: 100%;
-
-        &>* {
-            margin: 0 1rem;
-        }
-
-        img {
-            display: none;
-        }
-
-        h2 {
-            flex: 0 0 25%;
-            /* Fixed width for the name */
-            font-size: 1rem;
-            text-align: left;
-        }
-
-
-        div {
-            display: flex;
-            flex-direction: row;
-        }
-
-        #email {
-            flex: 1;
-            display: flex;
-            white-space: nowrap;
-        }
-
-        #phone,
-        #URL {
-            flex: 1;
-            display: flex;
-            white-space: nowrap;
-        }
-
-        &:nth-child(even) {
-            background-color: #bbb;
-        }
-    }
 }
+
+#compact section {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0.25rem;
+    width: 100%;
+
+}
+
+
+#compact &>* {
+    margin: 0 1rem;
+}
+
+#compact img {
+    display: none;
+}
+
+#compact h2 {
+    flex: 0 0 25%;
+    /* Fixed width for the name */
+    font-size: 1rem;
+    text-align: left;
+}
+
+
+#compact div {
+    display: flex;
+    flex-direction: row;
+}
+
+#compact #email {
+    flex: 1;
+    display: flex;
+    white-space: nowrap;
+}
+
+#compact #phone,
+#compact #URL {
+    flex: 1;
+    display: flex;
+    white-space: nowrap;
+}
+
+#compact &:nth-child(even) {
+    background-color: #bbb;
+}
+
+
+
 
 #mode-toggle {
     border: none;
