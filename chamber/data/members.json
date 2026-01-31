@@ -8,6 +8,7 @@
             "email": "store@Harber-Littel.com/",
             "websiteURL": "https://www.Harber-Littel.com/",
             "imageName": "placeholder",
+            "imageurl": "images/laptop.svg",
             "memberLevel": 3
         },
         {
@@ -18,6 +19,7 @@
             "email": "store@Hyatt-Schaden.com/",
             "websiteURL": "https://www.Hyatt-Schaden.com/",
             "imageName": "placeholder",
+            "imageurl": "images/laptop.svg",
             "memberLevel": 1
         },
         {
@@ -28,6 +30,7 @@
             "email": "store@Torp-Price-and-Corkery.com/",
             "websiteURL": "https://www.Torp-Price-and-Corkery.com/",
             "imageName": "placeholder",
+            "imageurl": "images/laptop.svg",
             "memberLevel": 2
         },
         {
@@ -38,6 +41,7 @@
             "email": "store@Boehm-and-Sons.com/",
             "websiteURL": "https://www.Boehm-and-Sons.com/",
             "imageName": "placeholder",
+            "imageurl": "images/laptop.svg",
             "memberLevel": 3
         },
         {
@@ -48,6 +52,7 @@
             "email": "store@Wisoky-Pfannerstill.com/",
             "websiteURL": "https://www.Wisoky-Pfannerstill.com/",
             "imageName": "placeholder",
+            "imageurl": "images/laptop.svg",
             "memberLevel": 2
         },
         {
@@ -58,6 +63,7 @@
             "email": "store@Walsh-Howell.com/",
             "websiteURL": "https://www.Walsh-Howell.com/",
             "imageName": "placeholder",
+            "imageurl": "images/laptop.svg",
             "memberLevel": 1
         },
         {
@@ -68,6 +74,7 @@
             "email": "store@GP-Hermiston.com/",
             "websiteURL": "https://www.GP-Hermiston.com/",
             "imageName": "placeholder",
+            "imageurl": "images/laptop.svg",
             "memberLevel": 3
         }
     ]

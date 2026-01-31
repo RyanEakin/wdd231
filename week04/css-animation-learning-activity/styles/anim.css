@@ -1,0 +1,82 @@
+#loader {
+    margin: 2rem;
+    width: 50px;
+    height: 50px;
+    border: 5px solid transparent;
+    border-color: #999 transparent #999 transparent;
+    /*this is what allows for the circle to be transparent on two sides*/
+    border-radius: 50%;
+    /*this creates a circle via rounding the border*/
+    animation: spin 1.5s linear infinite;
+    box-shadow: 0 0 1rem rgb(0 0 255 / 40%);
+}
+
+#loader::after {
+    content: '⚙️';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+
+/*second throbber example w/:hover psuedo element*/
+/*last I checked we also weren't taught how to make shapes in CSS*/
+
+#runner {
+    margin: 2rem;
+    width: 50px;
+    height: 50px;
+    border: 5px solid transparent;
+    border-color: #999 transparent #999 transparent;
+    /*this is what allows for the circle to be transparent on two sides*/
+    border-radius: 50%;
+    /*this creates a circle via rounding the border*/
+    transition: transform 1.5s linear;
+    box-shadow: 0 0 1rem rgb(0 0 255 / 40%);
+}
+
+#runner::after {
+    content: '⚙️';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 1.5s ease-in-out;
+    font-size: 2rem;
+}
+
+
+#runner:hover {
+    transform: rotate(360deg);
+}
+
+#runner:hover::after {
+    transform: translate(-50%, -50%) scale(1.5);
+}
+
+
+
+
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+
+    /*spins the throbber*/
+}
+
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    50% {
+        transform: translate(-50%, -50%) scale(1.25);
+    }
+}

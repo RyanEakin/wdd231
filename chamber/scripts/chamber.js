@@ -1,4 +1,4 @@
-const url = 'data/members.json';
+const localurl = 'data/members.json';
 const cards = document.querySelector('.cards');
 
 
@@ -8,6 +8,7 @@ const displayMembers = (members) => {
         const businessName = document.createElement('h2');
         const email = document.createElement('p')
         const info = document.createElement('div')
+        const contacts = document.createElement('div');
         const phone = document.createElement('p')
         const corpURL = document.createElement('p')
         const portrait = document.createElement('img');
@@ -27,12 +28,16 @@ const displayMembers = (members) => {
         portrait.setAttribute('width', '64px');
         portrait.setAttribute('height', '64px');
 
+        card.setAttribute('class', 'business')
+        contacts.setAttribute('class', 'contacts')
+
         card.appendChild(businessName);
 
-        card.appendChild(portrait);
-        info.appendChild(email);
-        info.appendChild(phone);
-        info.appendChild(corpURL);
+        info.appendChild(portrait);
+        contacts.appendChild(email);
+        contacts.appendChild(phone);
+        contacts.appendChild(corpURL);
+        info.appendChild(contacts);
 
         card.appendChild(info);
 
@@ -41,12 +46,12 @@ const displayMembers = (members) => {
 }
 
 async function getmemberData() {
-    const response = await fetch(url);
+    const response = await fetch(localurl);
     let data = await response.json();
 
     //
     try {
-        const response = await fetch(url);
+        const response = await fetch(localurl);
         if (response.ok) {
             const data = await response.json();
             displayMembers(data.members); // references the members array not just JSON object

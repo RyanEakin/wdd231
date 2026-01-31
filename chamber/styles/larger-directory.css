@@ -26,10 +26,6 @@
     }
 
 
-
-
-
-
     .socialmedia {
         display: flex;
         justify-self: center;
@@ -43,6 +39,55 @@
     .socialmedia img {
         max-width: 100px;
         max-height: fit-content;
+    }
+
+    #list-view {
+        justify-self: center;
+        margin-bottom: 16px;
+    }
+
+    #compact {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #compact section {
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        padding: 0.25rem;
+        width: 100%;
+
+    }
+
+    #compact img {
+        display: none;
+    }
+
+    #compact h2 {
+        flex: 0 0 25%;
+        /* Fixed width for the name */
+        font-size: 1rem;
+        text-align: left;
+    }
+
+
+    #compact div {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #compact .email {
+        flex: 1;
+        display: flex;
+        white-space: nowrap;
+    }
+
+    #compact .phone,
+    #compact .URL {
+        flex: 1;
+        display: flex;
+        white-space: nowrap;
     }
 
     #course-cert {

@@ -63,9 +63,10 @@ footer {
     display: flex;
     flex-direction: column;
     text-align: center;
-
     justify-content: center;
 }
+
+
 
 .cards {
     display: grid;
@@ -76,9 +77,24 @@ footer {
     /* Optional: adds space around the grid */
     box-shadow: 0 0 30px gray;
 
-
-
 }
+
+.home .business:nth-child(n+4) {
+    display: none;
+}
+
+.home button {
+    display: none;
+}
+
+.front {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    margin: 16px;
+}
+
+
 
 .cards section {
     display: grid;
@@ -93,10 +109,15 @@ footer {
 
 .cards div {
     display: flex;
+}
+
+.contacts {
+    display: flex;
     flex: auto;
     flex-direction: column;
     align-content: flex-end;
 }
+
 
 .cards img {
     display: flex;
@@ -111,10 +132,58 @@ footer {
     text-decoration: underline;
 }
 
+
 #list-view {
     justify-self: center;
     margin-bottom: 16px;
 }
+
+#calendar {
+    display: block;
+    flex: 3;
+    color: var(--text-color);
+    background-color: var(--sub-heading-color);
+}
+
+#today,
+#three {
+    display: block;
+    flex: 1;
+    color: var(--text-color);
+    background-color: var(--sub-heading-color);
+}
+
+#calendar h2,
+#today h2,
+#three h2 {
+    color: var(--text-color);
+    background-color: var(--heading-color);
+}
+
+#weather {
+    display: flex;
+    flex: 1;
+}
+
+#weather-icon {
+    display: flex;
+    height: 80px;
+    width: 80px;
+    margin-right: 5%;
+}
+
+#weather-icon div {
+    display: flex;
+    flex: 1;
+}
+
+#compact div {
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+    align-content: flex-end;
+}
+
 
 #compact {
     display: flex;
@@ -123,11 +192,9 @@ footer {
 
 #compact section {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin: 0;
     padding: 0.25rem;
-    width: 100%;
-
 }
 
 #compact img {
@@ -144,17 +211,17 @@ footer {
 
 #compact div {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
-#compact #email {
+#compact .email {
     flex: 1;
     display: flex;
     white-space: nowrap;
 }
 
-#compact #phone,
-#compact #URL {
+#compact .phone,
+#compact .URL {
     flex: 1;
     display: flex;
     white-space: nowrap;
