@@ -1,12 +1,14 @@
 const url = '//api.openweathermap.org/data/2.5/weather?lat=38.900500&lon=-77.037611&units=imperial&appid=dbaf0c6e7f36fcf8c3dec7dd079ea6c1'
+const forecasturl = '//api.openweathermap.org/data/2.5/forecast?lat=38.900500&lon=-77.037611&units=imperial&appid=dbaf0c6e7f36fcf8c3dec7dd079ea6c1';
 // no need for https protocol portion, automatically makes it or uses most appropriate protocol
 
 const temperature = document.getElementById('current-temp');
 const icon = document.getElementById('weather-icon');
+const forecast = document.getElementById('forecast');
 
-async function apiFetch() {
+async function apiFetch(chosenurl) {
     try {
-        const response = await fetch(url);
+        const response = await fetch(chosenurl);
         if (response.ok) {
             const data = await response.json();
             return data;
@@ -34,6 +36,7 @@ async function displayResults(data) {
     let sundown = data.sys.sunset;
     icon.setAttribute('loading', 'lazy');
     icon.setAttribute('src', iconurl);
+    icon.setAttribute('alt', "weather-icon");
 
     let smiles = sunny * 1000;
     let frowns = sundown * 1000;
@@ -55,6 +58,19 @@ async function displayResults(data) {
     <p>sunset: ${sunset}</p>`;
 }
 
-apiFetch().then(data => displayResults(data));
+async function displayForecastResults(data, selectedElement) {
+
+    console.log(data)
+
+
+
+    selectedElement.innerHTML =
+        `<p>Today: ${data.list[4].main.temp}&deg;F</p>
+        <p>Wednesday: ${data.list[8].main.temp}&deg;F</p>
+        <p>Friday: ${data.list[12].main.temp}&deg;F</p>`;
+}
+
+apiFetch(url).then(data => displayResults(data));
+apiFetch(forecasturl).then(data => displayForecastResults(data, forecast));
 //this needs to be remembered as the CORRECT way to access JSON objects via Promises
 // because it allows the first function to work. and THEN the next function to begin work

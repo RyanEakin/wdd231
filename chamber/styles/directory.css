@@ -209,11 +209,6 @@ footer {
 }
 
 
-#compact div {
-    display: flex;
-    flex-direction: column;
-}
-
 #compact .email {
     flex: 1;
     display: flex;
