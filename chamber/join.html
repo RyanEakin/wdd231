@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Chamber of Commerce home page for WDD 231 front-end-dev">
+    <meta name="author" content="Ryan Eakin">
+
+    <meta property="og:title" content="Directory | Chamber of Commerce">
+    <meta property="og:description" content="Chamber of Commerce home page for WDD 231 front-end-dev">
+    <meta property="og:image" content="https://ryaneakin.github.io/wdd231/chamber/images/Screenshot-join.png">
+    <meta property="og:image:height" content="1600">
+    <meta property="og:image:width" content="800">
+    <meta property="og:url" content="https://ryaneakin.github.io/wdd231/chamber/index.html">
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="styles/directory.css">
+    <link rel="stylesheet" href="styles/larger-directory.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/chamber.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <title>Join | U.S. Chamber of Commerce</title>
+</head>
+
+<body class="light-mode">
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img src="images/chamber.png" alt="logo" width="35" height="35"> U.S. Chamber of
+                    Commerce</a>
+                <div class="toggles">
+                    <a href="index.html" class="active">Home</a>
+                    <a href="#">Discover</a>
+                    <a href="directory.html">Directory</a>
+                    <a href="#">Join</a>
+                    <button id="mode-toggle"><img src="images/twilight.png" alt="light/dark-toggle"></button>
+                    <button aria-label="Menu" id="menu"></button>
+                </div>
+            </div>
+            <div class="bar">
+                <a href="index.html" class="active">Home</a>
+                <a href="#">Discover</a>
+                <a href="directory.html">Directory</a>
+                <a href="#">Join</a>
+            </div>
+        </nav>
+    </header>
+    <main></main>
+    <footer>
+        <div class="socialmedia">
+            <a href="https://www.x.com">
+                <img src="images/x-twitter-logo.svg" alt="Twitter/X" width="120" height="120">
+            </a>
+            <a href="https://www.github.com">
+                <img src="images/github-logo.svg" alt="GitHub" width="120" height="120">
+            </a>
+            <a href="https://www.linkedin.com">
+                <img src="images/linkdin-logo.svg" alt="Linkedin" width="120" height="120">
+            </a>
+        </div>
+        <p><span id="currentYear"></span>, Ryan Michael Eakin, United States</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
