@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /*base*/
+    --title-bar-color: #14152a;
+
+    --base-background-color: #303049;
+    --base-text-color: #ffffff;
+
+    /*code block colors*/
+    --desc-box-color: #a6a4d6;
+    --code-box-color: #171830;
+    --code-border-color: #5c5882;
+
+    --keyword-color: #8CD175;
+    --value-color: #D29A79;
+    --name-color: #66ADCC;
+    --secondary-text-color: #A5A5BB;
+
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 12px;
+    font-style: normal;
+}
+
+body {
+    background-color: var(--base-background-color);
+    color: var(--base-text-color);
+}
+
+header,
+footer {
+    background-color: var(--title-bar-color);
+    color: var(--secondary-text-color);
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+
+body {
+    background-color: var(--base-background-color);
+}
+
+main div {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+}
+
+h1,
+h2,
+h3 {
+    margin-left: 2%;
+}
+
+ul,
+p {
+    margin-left: 5%;
+}
+
+
+header nav a,
+footer a {
+    color: var(--secondary-text-color);
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+}
+
+/*Class Declarations*/
+
+.active {
+    border-bottom: 2px solid var(--secondary-text-color);
+}
+
+.border-box {
+    background-color: var(--code-border-color);
+    align-self: center;
+    padding: 10px;
+    margin: 1%;
+    width: 95%;
+}
+
+.desc {
+    background-color: var(--desc-box-color);
+    color: black;
+}
+
+.desc img {
+    width: 50%;
+    height: auto;
+    align-self: center;
+}
+
+.socialmedia {
+    display: flex;
+    justify-content: center;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia img {
+    color: var(--entry-color);
+    max-width: 100px;
+    max-height: fit-content;
+}
+
+.socialmedia img {
+    filter: invert(1);
+}
+
+/*ID Declarations*/
