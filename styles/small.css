@@ -161,7 +161,7 @@ footer {
 #course-details {
     top: 25%;
     left: 30%;
-    padding: absolute;
+    padding: 15px;
     border: 1px solid rgb(0 0 0 / 10%);
     border-radius: .25rem;
     padding: 1rem;
