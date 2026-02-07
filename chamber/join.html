@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="styles/larger-directory.css">
 
     <script src="scripts/navigation.js" defer></script>
-    <script type="module" src="scripts/dates.mjs" defer></script>
+    <script type="module" src="scripts/dates.mjs"></script>
     <script type="module" src="scripts/form.mjs"></script>
 
 
@@ -62,8 +62,8 @@
             <fieldset>
                 <h2>Applicant Information</h2>
                 <p>Given Name</p>
-                <label><input type="text" required name="gname" title="given name" autocomplete="given-name"
-                        placeholder="first name" title="Your Given Name"></label>
+                <label><input type="text" required name="gname" autocomplete="given-name" placeholder="first name"
+                        title="Your Given Name"></label>
                 <p>Family Name</p>
                 <label><input type="text" required name="fname" title="family name" autocomplete="family-name"
                         placeholder="last name"></label>
@@ -75,7 +75,7 @@
                 <label><input type="email" required name="email" title="email address" autocomplete="email"
                         placeholder="name@email.com"></label>
                 <p>Phone Number</p>
-                <label><input type="tel" required name="phone" title="phone number" autocomplete="mobile"
+                <label><input type="tel" required name="phone" title="phone number" autocomplete="tel"
                         placeholder="000-123-4567"></label>
                 <p>Business Name</p>
                 <label><input type="text" required name="org-name" title="business name" autocomplete="organization"
@@ -94,7 +94,7 @@
                 </div>
 
                 <h2>Business Description</h2>
-                <label><textarea name="occupation-desc"></textarea></label>
+                <label><textarea name="occupation-desc" title="description"></textarea></label>
                 <label><input type="hidden" name="date" id="hiddenDate"></label>
             </fieldset>
             <button type="submit">Enroll Membership</button>
