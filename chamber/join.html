@@ -21,9 +21,9 @@
     <link rel="stylesheet" href="styles/larger-directory.css">
 
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/dates.js" defer></script>
-    <script src="scripts/chamber.js" defer></script>
-    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/dates.mjs" defer></script>
+    <script type="module" src="scripts/form.mjs"></script>
+
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
@@ -49,28 +49,74 @@
                 </div>
             </div>
             <div class="bar">
-                <a href="index.html" class="active">Home</a>
+                <a href="index.html">Home</a>
                 <a href="#">Discover</a>
                 <a href="directory.html">Directory</a>
-                <a href="#">Join</a>
+                <a href="#" class="active">Join</a>
             </div>
         </nav>
     </header>
-    <main></main>
+    <main>
+
+        <form method="get" action="thankyou.html">
+            <fieldset>
+                <legend>Applicant Information</legend>
+                <label><input type="text" required name="gname" id="" autocomplete="given-name"
+                        placeholder="first name"></label>
+                <label><input type="text" required name="fname" id="" autocomplete="family-name"
+                        placeholder="last name"></label>
+                <label><input type="text" name="org-title" id="" pattern="-\s+[A-Za-z]+"
+                        autocomplete="organization-title" placeholder="occupational-title"></label>
+                <label><input type="email" required name="email" id="" autocomplete="email"
+                        placeholder="name@email.com"></label>
+                <label><input type="tel" required name="phone" id="" autocomplete="mobile"
+                        placeholder="000-123-4567"></label>
+                <label><input type="text" required name="org-name" id="" autocomplete="organization"
+                        placeholder="business name"></label>
+            </fieldset>
+            <fieldset class="rad-member">
+                <legend>Membership Information</legend>
+                <label><input type="radio" name="membership" id=""> Non-Profit</label>
+                <label><input type="radio" name="membership" id=""> Bronze</label>
+                <label><input type="radio" name="membership" id=""> Silver</label>
+                <label><input type="radio" name="membership" id=""> Gold</label>
+            </fieldset>
+            <fieldset>
+                <legend>Business Description</legend>
+                <label><textarea name="occupation-desc" id=""></textarea></label>
+                <label><input type="hidden" name="date" id="hiddenDate" autocomplete="on"></label>
+            </fieldset>
+            <button type="submit">Send Application</button>
+        </form>
+
+        <div class="levels"></div>
+
+    </main>
     <footer>
+        <div id="footer-left">
+            <p>U.S. Chamber of Commerce</p>
+            <p>1615 H Street NW</p> <!--address-->
+            <p>Washington, D.C, U.S.</p> <!--state,city-->
+            <p>Small Business Email: smallbusiness@uschamber.com</p> <!--email-->
+            <p>202-659-6000 </p> <!--phone number-->
+        </div>
         <div class="socialmedia">
             <a href="https://www.x.com">
-                <img src="images/x-twitter-logo.svg" alt="Twitter/X" width="120" height="120">
+                <img src="images/x-twitter-logo.png" alt="Twitter/X" width="120" height="120" loading="lazy">
             </a>
             <a href="https://www.github.com">
-                <img src="images/github-logo.svg" alt="GitHub" width="120" height="120">
+                <img src="images/github-logo.png" alt="GitHub" width="120" height="120" loading="lazy">
             </a>
             <a href="https://www.linkedin.com">
-                <img src="images/linkdin-logo.svg" alt="Linkedin" width="120" height="120">
+                <img src="images/linkdin-logo.png" alt="Linkedin" width="120" height="120" loading="lazy">
             </a>
         </div>
-        <p><span id="currentYear"></span>, Ryan Michael Eakin, United States</p>
-        <p id="lastModified"></p>
+        <div id="footer-right">
+            <p>WDD231 Class Project</p>
+            <p>Ryan Eakin</p>
+            <p><span id="currentYear"></span> Chamber of Commerce</p>
+            <p></p><span id="lastModified"></span>
+        </div>
     </footer>
 </body>
 

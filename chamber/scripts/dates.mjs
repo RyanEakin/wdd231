@@ -8,3 +8,5 @@ const year = d.getFullYear();
 
 document.getElementById("currentYear").innerHTML = "&copy; " + year;
 document.getElementById("lastModified").innerHTML = "Last Modification: " + document.lastModified;
+
+export const current_date = d.getFullYear();
