@@ -105,11 +105,53 @@ form button {
     flex-direction: column;
 }
 
-.levels {
-    position: absolute;
-    top: 20%;
-    right: 10%;
+.join {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
 
+.levels {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 1%;
+}
+
+.badge {
+    border: 1px solid rgb(23, 53, 53);
+    border-radius: 20px;
+    padding: .5em;
+    background-color: rgba(100, 200, 140, 0.2);
+    text-align: center;
+    width: 80%;
+}
+
+.badge p {
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+    margin: .5em 0;
+}
+
+.badge {
+    opacity: 0;
+    /* Initially hidden */
+    transform: translateY(50px);
+    /* Start below the viewport */
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+    /* Smooth transition */
+    transition: transform 0.3s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.badge.in-view {
+    opacity: 1;
+    transform: translateY(0);
+    /* Move to the original position */
+}
+
+.badge:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 
@@ -166,11 +208,17 @@ button {
     background-color: var(--sub-heading-color);
     color: var(--text-color);
     border-radius: 15px;
+    font-size: large;
+}
+
+.toggles button {
     width: 30%;
     height: 50px;
     font-size: large;
     justify-content: space-around;
 }
+
+
 
 h1 {
     color: var(--text-light);
@@ -203,9 +251,11 @@ footer {
     display: none;
 }
 
-.home button {
+#disappear {
     display: none;
 }
+
+
 
 
 .front {
@@ -254,8 +304,17 @@ footer {
 }
 
 
-#list-view {
-    justify-self: center;
+.list-view {
+    display: flex;
+    background-color: var(--sub-heading-color);
+    color: var(--text-color);
+    border-radius: 15px;
+    font-size: large;
+    width: 30%;
+    height: 50px;
+    margin: auto;
+    justify-content: center;
+    padding-top: 12px;
     margin-bottom: 16px;
 }
 
@@ -399,7 +458,6 @@ footer {
 .logo {
     display: flex;
     background-color: var(--heading-color);
-    display: flex;
     padding: 5px;
     align-items: center;
 }

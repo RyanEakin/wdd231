@@ -4,7 +4,7 @@ const navigation = document.querySelector(".bar");
 const twilight = document.getElementById("mode-toggle")
 const content = document.querySelector("body")
 
-const toggle = document.getElementById("list-view");
+const toggle = document.querySelector(".list-view");
 const list = document.querySelector(".cards");
 
 hamButton.addEventListener("click", () => {

@@ -25,6 +25,20 @@
         display: none;
     }
 
+    .levels {
+        display: flex;
+        flex-direction: column;
+        flex: .5;
+        width: fit-content;
+        margin-bottom: 1%;
+
+    }
+
+    .join {
+        display: flex;
+        flex-direction: row;
+    }
+
 
     .socialmedia {
         display: flex;
@@ -42,7 +56,14 @@
     }
 
     #list-view {
-        justify-self: center;
+        background-color: var(--sub-heading-color);
+        color: var(--text-color);
+        border-radius: 15px;
+        font-size: large;
+        width: 30%;
+        height: 50px;
+        margin: auto;
+        justify-content: center;
         margin-bottom: 16px;
     }
 
