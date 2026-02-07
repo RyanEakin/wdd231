@@ -70,7 +70,7 @@
                     <label><input type="text" required name="fname" title="family name" autocomplete="family-name"
                             placeholder="last name"></label>
                     <p>Title</p>
-                    <label><input type="text" name="org-title" title="job title" pattern="^[^@#$%&*]{7,}$"
+                    <label><input type="text" name="org-title" title="job title" pattern="[^@#$%&*]{7,}"
                             autocomplete="organization-title" placeholder="occupational-title"></label>
                     <!--the pattern uses the '^' to denote a start of a string, '$' the end, and within the container is the denylist-->
                     <p>Email</p>
@@ -109,19 +109,38 @@
 
                 <div class="badge np-card">
                     <p><strong>Non-Profit</strong></p>
-                    <button>More Information</button>
+                    <button class="openDetails" data-modal="npModal">More Information</button>
+                    <dialog id="npModal" class="modal">
+                        <h3>Non-Profit Membership Benefits</h3>
+                        <p></p>
+                        <button class="closeModal">Close</button>
+                    </dialog>
                 </div>
                 <div class="badge Bronze-card">
                     <p><strong>Bronze</strong></p>
-                    <button>More Information</button>
+                    <button class="openDetails" data-modal="bronzeModal">More Information</button>
+                    <dialog id="bronzeModal" class="modal">
+                        <h3>Bronze Membership Benefits</h3>
+                        <p></p>
+                        <button class="closeModal">Close</button>
+                    </dialog>
                 </div>
                 <div class="badge Silver-card">
                     <p><strong>Silver</strong></p>
-                    <button>More Information</button>
+                    <button class="openDetails" data-modal="silverModal">More Information</button>
+                    <dialog id="silverModal" class="modal">
+                        <h3>Silver Membership Benefits</h3>
+                        <p></p>
+                        <button class="closeModal">Close</button>
+                    </dialog>
                 </div>
                 <div class="badge Gold-card">
                     <p><strong>Gold</strong></p>
-                    <button>More Information</button>
+                    <button class="openDetails" data-modal="goldModal">More Information</button>
+                    <dialog id="goldModal" class="modal">
+                        <h3>Gold Membership Benefits</h3>
+                        <p></p>
+                    </dialog>
                 </div>
             </div>
         </div>

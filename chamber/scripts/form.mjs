@@ -3,6 +3,9 @@ import { current_date } from "./dates.mjs";
 const myInfo = new URLSearchParams(window.location.search);
 //console.log(myInfo);
 
+
+
+
 document.querySelector('#results').innerHTML = `
 <p><strong>Application for ${myInfo.get('gname')} ${myInfo.get('fname')}</strong></p>
 <p><strong>Your Title:</strong> ${myInfo.get('org-title')}</p> 
