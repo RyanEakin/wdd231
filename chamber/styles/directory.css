@@ -42,6 +42,10 @@ form {
 
     fieldset {
         display: block;
+        border: 10px solid var(--heading-color);
+        border-radius: 5%;
+        background-color: var(--sub-heading-color);
+        color: var(--text-color);
         font-size: .8rem;
         padding-top: .2rem;
         padding-left: .4rem;
@@ -87,10 +91,12 @@ form {
         resize: vertical;
         width: 75%;
         height: 100px;
+        margin-bottom: 2%;
     }
 
     button {
         width: 100%;
+        margin-top: 2%;
     }
 
     .rad-member {
@@ -101,10 +107,62 @@ form {
 
 }
 
+.levels {
+    position: absolute;
+    top: 20%;
+    right: 10%;
+
+}
 
 
+.levels div {
+    text-align: center;
+    margin-top: 5%;
+    border: 5px solid var(--heading-color);
+    border-radius: 5%;
+    background-color: var(--sub-heading-color);
+    color: var(--text-color);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
 
-/*Form Styling for Form Page*/
+.levels div:hover {
+    transform: translateY(-5px);
+}
+
+.thankyou {
+    margin: 25px;
+    text-align: center;
+    border-radius: 6px;
+    background-color: var(--sub-heading-color);
+    color: var(--entry-color);
+    padding-bottom: 15px;
+
+}
+
+#results {
+    text-align: left;
+    padding: 0 1rem;
+    border: 1px solid rgb(23, 53, 53);
+    border-radius: 6px;
+    width: 80%;
+    margin: 2em auto;
+    background-color: var(--heading-color);
+}
+
+#results p:first-child {
+    margin-top: 15px;
+}
+
+#results p:last-child {
+    margin-bottom: 15px;
+}
+
+#results p {
+    margin: 0 1em .5em 1em;
+    color: var(--text-color);
+}
+
+/*End Form Styling for Form Page*/
 
 button {
     background-color: var(--sub-heading-color);
