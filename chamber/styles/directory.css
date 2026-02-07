@@ -205,6 +205,34 @@ form button {
 
 /*End Form Styling for Form Page*/
 
+
+/*Modals Start*/
+dialog {
+    top: 25%;
+    left: 30%;
+    padding: absolute;
+    border: 1px solid rgb(0 0 0 / 10%);
+    border-radius: .25rem;
+    padding: 1rem;
+    background-color: #fff;
+    width: 90%;
+    max-width: 600px;
+}
+
+dialog li {
+    text-align: left;
+    margin-left: 10%;
+}
+
+
+::backdrop {
+    background-color: rgb(0 0 0 / 50%);
+}
+
+/*Modals End*/
+
+
+
 button {
     background-color: var(--sub-heading-color);
     color: var(--text-color);

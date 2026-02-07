@@ -1,4 +1,5 @@
 const openDetails = document.querySelectorAll('.openDetails');
+const testDetails = document.getElementById('npModal');
 const closeModal = document.querySelectorAll('.closeModal');
 
 openDetails.forEach(button => {
