@@ -468,6 +468,10 @@ footer {
     grid-area: press;
 }
 
+#last-visit {
+    text-align: center;
+}
+
 /*End of Discover page*/
 
 
