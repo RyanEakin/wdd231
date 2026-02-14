@@ -1,51 +1,45 @@
-import { itemsOfInterest } from "../data/ioi.mjs";
+import revelations from "../data/ioi.mjs";
 const cards = document.querySelector('.discover-grid');
 
-const displayMembers = (revelations) => {
-    revelations.forEach((revelation) => {
+const displayMembers = (revealings) => {
+    revealings.forEach((reveal) => {
         const card = document.createElement('section');
         const Item = document.createElement('h2');
-        const imageName = document.createElement('figure');
+        const figureEight = document.createElement('figure')
+        const imageName = document.createElement('img');
         const address = document.createElement('address');
-        const desc = document.createElement('p')
+        const desc = document.createElement('p');
         const learn = document.createElement('button');
 
-        Item.textContent = `${revelation.name}`;
-        address.textContent = `${revelation.address}`
-        desc.textContent = `${revelation.address}`
+        Item.textContent = `${reveal.name}`;
+        address.textContent = `${reveal.address}`;
+        desc.textContent = `${reveal.description}`;
+        imageName.setAttribute('src', reveal.imageName);
+        imageName.setAttribute('loading', 'lazy');
+        imageName.setAttribute('width', '300');
+        imageName.setAttribute('height', '200');
 
+        learn.textContent = "Learn more"
+        figureEight.appendChild(imageName);
+        card.appendChild(learn);
+        card.appendChild(figureEight);
+        card.appendChild(Item);
+        card.appendChild(address);
+        card.appendChild(desc);
 
-        card.appendChild();
 
         cards.appendChild(card);
     });
 }
 
-async function getmemberData() {
-    const response = await fetch(localurl);
-    let data = await response.json();
-
-    //
+function getmemberData() {
+    // Directly use revelations imported from the .mjs file
     try {
-        const response = await fetch(localurl);
-        if (response.ok) {
-            const data = await response.json();
-            displayMembers(data.members); // references the members array not just JSON object
-            return data;
-            // displayResults(data); // this also works for parsing through JSON data
-        }
-        else {
-            throw Error(await response.text());
-        }
-
-    }
-    catch (error) {
+        // Display the revealings without an async fetch
+        displayMembers(revelations.revealings);
+    } catch (error) {
         console.log(error);
     }
-    //
-
-    //console.table(data.members); // temporary testing of data response
-
 }
 
 getmemberData();

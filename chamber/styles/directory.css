@@ -427,7 +427,46 @@ footer {
 }
 
 /*Start of Discover page*/
+.discover-grid {
+    display: grid;
+}
 
+
+.discover-grid section {
+    margin: 1rem 8px;
+    border: 1px solid #999;
+    background-color: #eee;
+    border-radius: 8px;
+    overflow: hidden;
+
+
+}
+
+.discover-grid section h2 {
+    margin: 1rem 10px;
+    grid-area: name;
+}
+
+.discover-grid section figure {
+    width: 300px;
+    grid-area: birdsView;
+}
+
+.discover-grid section address {
+    margin: 1rem 10px;
+    grid-area: location;
+}
+
+.discover-grid section p {
+    margin: 1rem 10px;
+    grid-area: description;
+}
+
+.discover-grid section button {
+    width: 100%;
+    height: 60px;
+    grid-area: press;
+}
 
 /*End of Discover page*/
 

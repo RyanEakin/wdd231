@@ -1,0 +1,29 @@
+@media screen and (min-width: 320px) and (max-width: 640px) {
+
+    /*medium*/
+    .discover-grid section {
+        display: grid;
+        grid-template-areas:
+            "name"
+            "birdsView"
+            "description "
+            "location"
+            "press"
+        ;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+
+    /*medium*/
+    .discover-grid section {
+        display: grid;
+        grid-template-areas:
+            "name name"
+            "birdsView description"
+            "birdsView description "
+            "birdsView location"
+            "press press"
+        ;
+    }
+}
