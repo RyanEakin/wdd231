@@ -15,7 +15,7 @@ const displayMembers = (revealings) => {
         address.textContent = `${reveal.address}`;
         desc.textContent = `${reveal.description}`;
         imageName.setAttribute('src', reveal.imageName);
-        imageName.setAttribute('alt', reveal.imageName);
+        imageName.setAttribute('alt', `${reveal.imageName}`);
         imageName.setAttribute('loading', 'lazy');
         imageName.setAttribute('width', '300');
         imageName.setAttribute('height', '200');
