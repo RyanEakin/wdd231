@@ -18,10 +18,9 @@ const displayExamples = () => {
     deck.setAttribute('class', "slice");
 
     front.setAttribute('class', "border-box");
-    glass.setAttribute('name', "visual-example")
 
     back.setAttribute('class', "border-box");
-    definer.setAttribute('name', "code-box")
+
 
     //if (boxState === "CSS") {
     //    const box = document.createElement('textarea');
@@ -36,10 +35,12 @@ const displayExamples = () => {
     //}
     view.setAttribute('class', "example")
     glass.appendChild(view);
+    glass.setAttribute('aria-label', "visual example");
     front.appendChild(glass);
 
     box.setAttribute('class', "code");
     definer.appendChild(box)
+    definer.setAttribute('aria-label', "code-box");
     back.appendChild(definer);
 
     deck.appendChild(front);
