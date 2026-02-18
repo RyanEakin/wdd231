@@ -29,17 +29,25 @@
 
 
     <script type="module" src="scripts/dates.mjs"></script>
-    <script type="module" src="scripts/"></script>
+    <script type="module" src="scripts/navigation.mjs"></script>
     <script type="module" src="scripts/"></script>
 </head>
 
 <body>
     <header>
         <nav>
+            <div class="toggles">
+                <a href="styling.html">CSS-Styling-Exhibits</a>
+                <a href="#" class="active">Musuem of Web Dev</a>
+                <a href="functions.html">JavaScript-Function-Exhibits</a>
+                <button aria-label="Menu" id="menu"></button>
+            </div>
+        </nav>
+        <div class="bar">
             <a href="styling.html">CSS-Styling-Exhibits</a>
             <a href="#" class="active">Musuem of Web Dev</a>
             <a href="functions.html">JavaScript-Function-Exhibits</a>
-        </nav>
+        </div>
     </header>
     <main>
         <div>
@@ -119,6 +127,8 @@
                 </div>
             </section>
         </div>
+
+        <div id="pageContent"></div>
     </main>
 
     <footer>

@@ -1,1 +1,26 @@
-@media screen {}
+@media screen and (min-width: 1000px) {
+
+    .toggles a {
+        display: flex;
+        margin-right: 16px;
+    }
+
+    .toggles a:hover {
+        background-color: #011b3d;
+    }
+
+
+    .bar {
+        display: none;
+    }
+
+    .bar.open {
+        display: none;
+    }
+
+    /*ID Declarations*/
+
+    #menu {
+        display: none;
+    }
+}

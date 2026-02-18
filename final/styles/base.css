@@ -37,19 +37,15 @@ footer {
     color: var(--secondary-text-color);
 }
 
-header nav {
+header nav div {
     display: flex;
     justify-content: space-between;
     padding: 16px;
 }
 
-
-body {
-    background-color: var(--base-background-color);
-}
-
 main div {
     display: flex;
+    flex: 1;
     flex-direction: column;
     padding: 24px;
 }
@@ -61,7 +57,7 @@ h3 {
 }
 
 ul,
-p {
+.border-box p span {
     margin-left: 5%;
 }
 
@@ -77,6 +73,58 @@ footer {
 }
 
 /*Class Declarations*/
+
+.keyword {
+    color: var(--keyword-color);
+}
+
+.value {
+    color: var(--value-color);
+}
+
+.name {
+    color: var(--name-color);
+}
+
+.text {
+    color: var(--text-color);
+}
+
+.toggles {
+    display: flex;
+    margin-left: auto;
+}
+
+.toggles a {
+    display: none;
+}
+
+.bar {
+    display: none;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: var(--sub-heading-color);
+    color: var(--text-color);
+    align-items: center;
+}
+
+.bar a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    margin-right: 10px;
+    background-color: var(--sub-heading-color);
+    color: var(--text-color);
+}
+
+.bar a:hover {
+    background-color: var(--heading-color);
+}
+
+.bar.open {
+    display: flex;
+}
 
 .active {
     border-bottom: 2px solid var(--secondary-text-color);
@@ -101,6 +149,8 @@ footer {
     align-self: center;
 }
 
+.code {}
+
 .socialmedia {
     display: flex;
     justify-content: center;
@@ -111,7 +161,6 @@ footer {
 }
 
 .socialmedia img {
-    color: var(--entry-color);
     max-width: 100px;
     max-height: fit-content;
 }
@@ -121,3 +170,19 @@ footer {
 }
 
 /*ID Declarations*/
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: var(--entry-color);
+    padding-left: 8px;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "❎";
+}

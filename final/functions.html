@@ -24,22 +24,36 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/large.css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
     <script type="module" src="scripts/dates.mjs"></script>
+    <script type="module" src="scripts/navigation.mjs"></script>
     <script type="module" src="scripts/"></script>
-    <script type="module" src="scripts/"></script>
+
+
 </head>
 
 <body>
     <header>
         <nav>
+            <div class="toggles">
+                <a href="styling.html">CSS-Styling-Exhibits</a>
+                <a href="index.html">Musuem of Web Dev</a>
+                <a href="functions.html" class="active">JavaScript-Function-Exhibits</a>
+                <button aria-label="Menu" id="menu"></button>
+            </div>
+        </nav>
+        <div class="bar">
             <a href="styling.html">CSS-Styling-Exhibits</a>
             <a href="index.html">Musuem of Web Dev</a>
-            <a href="#" class="active">JavaScript-Function-Exhibits</a>
-        </nav>
+            <a href="functions.html" class="active">JavaScript-Function-Exhibits</a>
+        </div>
     </header>
 
     <body>
-
+        <div id="pageContent"></div>
     </body>
 
     <footer>

@@ -1,0 +1,32 @@
+{
+    "Example-One": [
+        {
+            "JS": [
+                {
+                    "keyword-type": "",
+                    "function-name": "",
+                    "function-body": ""
+                },
+                {
+                    "keyword-type": "",
+                    "function-name": "",
+                    "function-body": ""
+                }
+            ],
+            "CSS": [
+                {
+                    "Example-One": [
+                        {
+                            "selector-name": "",
+                            "declared-body": ""
+                        },
+                        {
+                            "selector-name": "",
+                            "declared-body": ""
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
