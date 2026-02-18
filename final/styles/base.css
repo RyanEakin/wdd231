@@ -158,7 +158,9 @@ footer {
     align-self: center;
 }
 
-.code {}
+.code {
+    width: 100%;
+}
 
 .socialmedia {
     display: flex;
