@@ -163,9 +163,6 @@ footer {
 .socialmedia img {
     max-width: 100px;
     max-height: fit-content;
-}
-
-.socialmedia img {
     filter: invert(1);
 }
 
