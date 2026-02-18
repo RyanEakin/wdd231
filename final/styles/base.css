@@ -72,6 +72,10 @@ footer {
     text-align: center;
 }
 
+::backdrop {
+    background-color: rgb(0 0 0 / 50%);
+}
+
 /*Class Declarations*/
 
 .keyword {
@@ -130,6 +134,11 @@ footer {
     border-bottom: 2px solid var(--secondary-text-color);
 }
 
+.slice {
+    display: flex;
+    flex-direction: column;
+}
+
 .border-box {
     background-color: var(--code-border-color);
     align-self: center;
@@ -172,7 +181,7 @@ footer {
     font-size: 1.5rem;
     border: 0;
     background: none;
-    color: var(--entry-color);
+    color: var(--base-text-color);
     padding-left: 8px;
 }
 
@@ -183,3 +192,103 @@ footer {
 #menu.open::before {
     content: "❎";
 }
+
+/*Form Styling for Join Page*/
+
+dialog {
+    background-color: var(--base-background-color);
+    color: var(--base-text-color);
+    border: none;
+    border-radius: 5%;
+    justify-self: center;
+    align-self: center;
+}
+
+#last-visit {
+    text-align: center;
+}
+
+.closeModal {
+    position: absolute;
+    right: 25px;
+    top: 60px;
+    background-color: transparent;
+    border: none;
+}
+
+.closeModal::before {
+    font-size: 1.5rem;
+    padding: 8px;
+    content: "❌";
+}
+
+
+form {
+    margin: 1rem 2%;
+    width: 95%;
+}
+
+form fieldset {
+    display: block;
+    border: 10px solid var(--title-bar-color);
+    border-radius: 5%;
+    background-color: var(--base-background-color);
+    color: var(--base-text-color);
+    font-size: .8rem;
+    padding-top: .2rem;
+    padding-left: .4rem;
+}
+
+form h3 {
+    font-size: .9rem;
+    color: #E07A5F;
+    margin: 1.5rem 0 .2rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+form input[type=text],
+form input[type=tel],
+form input[type=date],
+form input[type=email] {
+    display: block;
+    margin: .1rem 0 1rem 0;
+    padding: .3rem;
+    border: 1px solid #999;
+    border-radius: 4px;
+    border-left-width: 5px;
+    border-left-color: #555;
+    font-size: 1rem;
+    color: #3D405B;
+    width: 200px;
+}
+
+form input[type=radio] {
+    font-size: 24px
+}
+
+form input:required {
+    border-left-color: #d70000;
+}
+
+form input:focus {
+    border-left-color: black;
+    outline: none;
+}
+
+form input:required:valid {
+    border-left-color: green;
+}
+
+form textarea {
+    resize: vertical;
+    width: 75%;
+    height: 100px;
+    margin-bottom: 2%;
+}
+
+.submit {
+    width: 85%;
+    margin-top: 2%;
+}
+
+/*Form Styling for Join Page end*/

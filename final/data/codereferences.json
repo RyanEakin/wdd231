@@ -3,14 +3,26 @@
         {
             "JS": [
                 {
-                    "keyword-type": "",
-                    "function-name": "",
-                    "function-body": ""
+                    "keyword": "",
+                    "name": "",
+                    "value": [],
+                    "body": [
+                        {
+                            "keyword": "",
+                            "value": ""
+                        }
+                    ]
                 },
                 {
                     "keyword-type": "",
                     "function-name": "",
-                    "function-body": ""
+                    "parameter": [],
+                    "function-body": [
+                        {
+                            "keyword-type": "",
+                            "value": ""
+                        }
+                    ]
                 }
             ],
             "CSS": [
@@ -18,11 +30,21 @@
                     "Example-One": [
                         {
                             "selector-name": "",
-                            "declared-body": ""
+                            "declared-body": [
+                                {
+                                    "property-name": "",
+                                    "property-value": ""
+                                }
+                            ]
                         },
                         {
                             "selector-name": "",
-                            "declared-body": ""
+                            "declared-body": [
+                                {
+                                    "property-name": "",
+                                    "property-value": ""
+                                }
+                            ]
                         }
                     ]
                 }

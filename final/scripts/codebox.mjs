@@ -1,48 +1,58 @@
-import "../data/codereferences.json";
-import { WordColorer } from colortext.mjs
-const fronts = document.getElementById('pageContent');
+//import "../data/codereferences.json";
+//import { WordColorer } from colortext.mjs
+const dealer = document.querySelector('.pageContent');
 
 const displayExamples = () => {
 
-    example.forEach(() => {
-        const deck = document.createElement('div');
-        const front = document.createElement('div');
-        const back = document.createElement('div');
+    //example.forEach(() => {
+    const deck = document.createElement('div');
 
-        front.setAttribute('class', "border-box");
+    const front = document.createElement('div');
+    const view = document.createElement('article');
 
-        if (boxState === "JS" || boxState === "CSS") {
-            const style = document.createElement('textarea');
-            style.setAttribute('class', "code");
-            style.appendChild(document.createTextNode(cssCode));
-            document.head.appendChild(style);
-        }
+    const back = document.createElement('div');
+    const box = document.createElement('textarea');
 
-        else {
-            const backing = document.createElement('article');
-            backing.setAttribute('class', "example")
-        }
+    deck.setAttribute('class', "slice")
+    front.setAttribute('class', "border-box");
+    back.setAttribute('class', "border-box");
 
+    //if (boxState === "CSS") {
+    //    const box = document.createElement('textarea');
+    //    box.setAttribute('class', "code");
+    //    box.appendChild(document.createTextNode(cssCode));
+    //    document.head.appendChild(style);
+    //    back.appendChild(box);
+    //}
 
-        front.appendChild();
+    //else {
 
-        fronts.appendChild(front);
-    });
+    //}
+    view.setAttribute('class', "example")
+    front.appendChild(view);
+
+    box.setAttribute('class', "code");
+    back.appendChild(box);
+
+    deck.appendChild(front);
+    deck.appendChild(back);
+    dealer.appendChild(deck);
+    //});
 }
 
-document.getElementById('refreshCode').addEventListener('click', function () {
-    // Get the CSS and JavaScript input values
-    const cssCode = document.getElementById('cssInput').value;
-    const jsCode = document.getElementById('jsInput').value;
+//document.getElementById('refreshCode').addEventListener('click', function () {
+// Get the CSS and JavaScript input values
+//    const cssCode = document.getElementById('cssInput').value;
+//    const jsCode = document.getElementById('jsInput').value;
 
-    // Add the CSS to the page
-    style.appendChild(document.createTextNode(cssCode));
-    document.head.appendChild(style);
+// Add the CSS to the page
+//    style.appendChild(document.createTextNode(cssCode));
+//    document.head.appendChild(style);
 
-    // Execute the JavaScript code
-    script.appendChild(document.createTextNode(jsCode));
-    document.body.appendChild(script);
-});
+// Execute the JavaScript code
+//    script.appendChild(document.createTextNode(jsCode));
+//    document.body.appendChild(script);
+//});
 
 function getmemberData() {
     // Directly use revelations imported from the .mjs file
@@ -54,4 +64,5 @@ function getmemberData() {
     }
 }
 
-getmemberData();
+//getmemberData();
+displayExamples();

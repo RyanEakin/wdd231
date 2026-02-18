@@ -12,7 +12,7 @@
     <meta property="og:title" content="Museum of Web Dev">
     <meta property="og:description"
         content="this page is for my Web Dev Final going over functional exhibits of web dev concepts and common misconceptions I at least had during the course">
-    <meta property="og:image" content="https://ryaneakin.github.io/wdd231/final/images/Screenshot.png">
+    <meta property="og:image" content="https://ryaneakin.github.io/wdd231/final/images/home-Screenshot.png">
     <meta property="og:image:height" content="1600">
     <meta property="og:image:width" content="800">
     <meta property="og:url" content="https://ryaneakin.github.io/wdd231/final/index.html">
@@ -31,6 +31,8 @@
     <script type="module" src="scripts/dates.mjs"></script>
     <script type="module" src="scripts/navigation.mjs"></script>
     <script type="module" src="scripts/codebox.mjs"></script>
+    <script type="module" src="scripts/modal.mjs"></script>
+    <script type="module" src="scripts/visitchecker.mjs"></script>
 </head>
 
 <body>
@@ -129,7 +131,42 @@
             </section>
         </div>
 
-        <div id="pageContent"></div>
+        <div class="pageContent homeContent"></div>
+        <dialog id="homeModal">
+            <p id="last-visit"></p>
+            <button class="closeModal"></button>
+            <form method="get" action="thankyou.html">
+                <fieldset>
+                    <h2>Applicant Information</h2>
+                    <p>Given Name</p>
+                    <label><input type="text" required name="gname" autocomplete="given-name" placeholder="first name"
+                            title="Your Given Name"></label>
+                    <p>Family Name</p>
+                    <label><input type="text" required name="fname" title="family name" autocomplete="family-name"
+                            placeholder="last name"></label>
+                    <p>Title</p>
+                    <label><input type="text" name="org-title" title="job title" pattern="[^@#$%&*0-9]{7,}"
+                            autocomplete="organization-title" placeholder="occupational-title"></label>
+                    <!--the pattern uses the '^' to denote a start of a string, '$' the end, and within the container is the denylist-->
+                    <p>Email</p>
+                    <label><input type="email" required name="email" title="email address" autocomplete="email"
+                            placeholder="name@email.com"></label>
+                    <p>Phone Number</p>
+                    <label><input type="tel" required name="phone" title="phone number" autocomplete="tel"
+                            placeholder="000-123-4567"></label>
+                    <p>Business Name</p>
+                    <label><input type="text" required name="org-name" title="business name" autocomplete="organization"
+                            placeholder="business name"></label>
+
+                    <h2>Suggestions for the Museum</h2>
+                    <label><textarea name="occupation-desc" title="description"></textarea></label>
+                    <label><input type="hidden" name="date" id="hiddenDate"></label>
+
+                    <button class="submit" type="submit">Send Suggestions</button>
+                </fieldset>
+
+            </form>
+        </dialog>
     </main>
 
     <footer>
