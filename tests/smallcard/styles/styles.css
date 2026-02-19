@@ -5,8 +5,6 @@
     /* Optional: adds space between cards */
     padding: 16px;
     /* Optional: adds space around the grid */
-    box-shadow: 0 0 30px gray;
-
 }
 
 .business:nth-child(n+2) {
