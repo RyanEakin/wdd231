@@ -35,6 +35,7 @@ const displayExamples = () => {
 
         view.setAttribute('class', "example")
         view.setAttribute('src', pageChoice[index])
+        view.setAttribute('title', "Example Website");
         glass.appendChild(view);
         glass.setAttribute('aria-label', "visual example");
         front.appendChild(glass);

@@ -1,0 +1,33 @@
+.card {
+    width: 200px;
+    /* Small container */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-image {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 15px;
+    background-color: #fff;
+}
+
+.card-title {
+    font-size: 1.2em;
+    margin: 0 0 10px;
+}
+
+.card-description {
+    font-size: 0.9em;
+    color: #666;
+}

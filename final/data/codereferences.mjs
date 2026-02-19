@@ -513,7 +513,7 @@ const animationCSS = [
     "}",
     "}"
 ];
-const animPage = "";
+const animPage = "../week04/css-animation-learning-activity/index.html";
 
 const separationCSS = [
     ".cards",
@@ -524,12 +524,10 @@ const separationCSS = [
     ";",
     "grid-template-columns",
     ":",
-    "repeat(auto-fit",
-    ",",
-    "minmax(375px",
-    ",",
-    "1fr))",
-    ";",
+    "repeat(auto-fit,",
+    "minmax(375px,",
+    "1fr)",
+    ");",
     "gap",
     ":",
     "16px",
@@ -548,7 +546,15 @@ const separationCSS = [
     "gray",
     ";",
     "}",
-
+    "",
+    ".business:nth-child(n+2)",
+    "{",
+    "display",
+    ":",
+    "none",
+    ";",
+    "}",
+    "",
     ".front",
     "{",
     "display",
@@ -568,8 +574,9 @@ const separationCSS = [
     "16px",
     ";",
     "}",
-
-    ".cards section",
+    "",
+    ".cards",
+    "section",
     "{",
     "display",
     ":",
@@ -606,15 +613,16 @@ const separationCSS = [
     "hidden",
     ";",
     "}",
-
-    ".cards div",
+    "",
+    ".cards",
+    "div",
     "{",
     "display",
     ":",
     "flex",
     ";",
     "}",
-
+    "",
     ".contacts",
     "{",
     "display",
@@ -634,8 +642,9 @@ const separationCSS = [
     "flex-end",
     ";",
     "}",
-
-    ".cards img",
+    "",
+    ".cards",
+    "img",
     "{",
     "display",
     ":",
@@ -670,19 +679,29 @@ const separationCSS = [
     "flex-start",
     ";",
     "}",
-
-    ".cards h2",
+    "",
+    ".cards",
+    "h2",
     "{",
     "text-decoration",
     ":",
     "underline",
     ";",
+    "}",
+    "",
+    ".cards",
+    "p",
+    "{",
+    "margin",
+    ":",
+    "0px",
+    ";",
     "}"
 ];
 
-const separationPage = "";
+const separationPage = "../tests/smallcard/index.html";
 
-const cardCSS = [
+const borderCSS = [
     ".card",
     "{",
     "width",
@@ -779,7 +798,7 @@ const cardCSS = [
     "}"
 ];
 
-const cardPage = "";
+const cardPage = "../tests/bordereffects/index.html";
 
 const stylingTablesCSS = [
     "*",
@@ -797,6 +816,7 @@ const stylingTablesCSS = [
     "border-box",
     ";",
     "}",
+    "",
     "table",
     "{",
     "border",
@@ -811,7 +831,12 @@ const stylingTablesCSS = [
     ":",
     "bold",
     ";",
+    "margin-left",
+    ":",
+    "5%",
+    ";",
     "}",
+    "",
     "caption",
     "{",
     "background-color",
@@ -827,6 +852,7 @@ const stylingTablesCSS = [
     "16px",
     ";",
     "}",
+    "",
     "td:nth-child(even)",
     "{",
     "padding",
@@ -846,6 +872,25 @@ const stylingTablesCSS = [
     "black",
     ";",
     "}",
+    "",
+    "td:nth-child(odd)",
+    "{",
+    "border-spacing",
+    ":",
+    "0px",
+    ";",
+    "background-color",
+    ":",
+    "rgb(187,",
+    "186,",
+    "186)",
+    ";",
+    "color",
+    ":",
+    "black",
+    ";",
+    "}",
+    "",
     "th:first-child",
     "{",
     "background-color",
@@ -857,6 +902,7 @@ const stylingTablesCSS = [
     "black",
     ";",
     "}",
+    "",
     "th",
     "{",
     "padding",
@@ -876,6 +922,7 @@ const stylingTablesCSS = [
     "white",
     ";",
     "}",
+    "",
     "td",
     "{",
     "text-align",
@@ -883,6 +930,7 @@ const stylingTablesCSS = [
     "center",
     ";",
     "}",
+    "",
     "tfoot",
     "{",
     "font-weight",
@@ -896,7 +944,8 @@ const stylingTablesCSS = [
     "}"
 ];
 
-const tablesPage = "";
 
-export const CSSExamples = [animationCSS, separationCSS, cardCSS, stylingTablesCSS];
+const tablesPage = "../tests/tables/tables.html";
+
+export const CSSExamples = [animationCSS, separationCSS, borderCSS, stylingTablesCSS];
 export const CSSpages = [animPage, separationPage, cardPage, tablesPage];

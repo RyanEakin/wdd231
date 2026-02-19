@@ -1,0 +1,61 @@
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+    gap: 16px;
+    /* Optional: adds space between cards */
+    padding: 16px;
+    /* Optional: adds space around the grid */
+    box-shadow: 0 0 30px gray;
+
+}
+
+.business:nth-child(n+2) {
+    display: none;
+}
+
+.front {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    margin: 16px;
+}
+
+.cards section {
+    display: grid;
+    gap: 8px;
+    background-color: #b9b9cc;
+    margin: 2px;
+    border: 1px solid #454592;
+    padding: 1rem;
+    width: fit-content;
+    overflow: hidden;
+}
+
+.cards div {
+    display: flex;
+}
+
+.contacts {
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+    align-content: flex-end;
+}
+
+
+.cards img {
+    display: flex;
+    flex: 0 0 25%;
+    width: 64px;
+    height: 64px;
+    border: 1px solid rgb(0 0 0 / 0%);
+    align-items: flex-start;
+}
+
+.cards h2 {
+    text-decoration: underline;
+}
+
+.cards p {
+    margin: 0px;
+}
