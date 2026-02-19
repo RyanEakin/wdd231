@@ -1,5 +1,10 @@
 @media screen and (min-width: 1000px) {
 
+    .border-box {
+
+        width: 100%;
+    }
+
     .toggles a {
         display: flex;
         margin-right: 16px;
