@@ -173,7 +173,7 @@ footer {
     align-self: center;
     padding: 10px;
     margin: 1%;
-    width: 130%;
+    width: 100%;
 }
 
 .desc {
@@ -191,7 +191,6 @@ footer {
     background-color: var(--code-box-color);
     width: 100%;
     overflow-y: auto;
-
     height: 405px;
 }
 
