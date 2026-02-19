@@ -1,5 +1,5 @@
 import { WordColorer } from "./colortext.mjs";
-import { CSSExamples, JSExamples } from "../data/codereferences.mjs";
+import { CSSExamples, JSExamples, JSpages, CSSpages } from "../data/codereferences.mjs";
 const dealer = document.querySelector('.pageContent');
 
 const displayExamples = () => {
@@ -8,12 +8,16 @@ const displayExamples = () => {
         ? CSSExamples // if it is true, then use this
         : JSExamples; // if it is false, then use this
 
-    listChoice.forEach((example) => {
+    let pageChoice = (window.location.pathname === "/wdd231/final/styling.html")
+        ? CSSpages // if it is true, then use this
+        : JSpages; // if it is false, then use this
+
+    listChoice.forEach((example, index) => {
         const deck = document.createElement('div');
 
         const front = document.createElement('div');
-        const glass = document.createElement('label');
-        const view = document.createElement('article');
+        const glass = document.createElement('article');
+        const view = document.createElement('iframe');
 
         const back = document.createElement('div');
         const definer = document.createElement('label');
@@ -27,7 +31,10 @@ const displayExamples = () => {
 
         box.innerHTML = WordColorer(example);
 
+
+
         view.setAttribute('class', "example")
+        view.setAttribute('src', pageChoice[index])
         glass.appendChild(view);
         glass.setAttribute('aria-label', "visual example");
         front.appendChild(glass);
@@ -58,15 +65,6 @@ const displayExamples = () => {
     //});
 }
 
-function getmemberData() {
-    // Directly use revelations imported from the .mjs file
-    try {
-        // Display the revealings without an async fetch
-        displayExamples(revelations.revealings);
-    } catch (error) {
-        console.log(error);
-    }
-}
 
 //getmemberData();
 displayExamples();

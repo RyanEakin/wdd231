@@ -141,6 +141,8 @@ const weatherExampleJS = ["const",
     "// because it allows the first function to work. and THEN the next function to begin work"
 ];
 
+const weatherPage = "../week03/api-learning-activity/weather.html";
+
 const staticTimestampJS = [
     "const",
     "timestamp",
@@ -160,6 +162,8 @@ const staticTimestampJS = [
     "`The static timestamp is: ${timestamp.toString()}`",
     ";"
 ];
+
+const stampPage = "../tests/timestamp/index.html";
 
 const templateLiteralsJS = [
     "const",
@@ -191,48 +195,88 @@ const templateLiteralsJS = [
     ";"
 ];
 
+const literalsPage = "../tests/literals/index.html";
+
 const esModulesJS = [
-    "import { add, subtract }",
+    "import byuiCourse",
     "from",
-    "'./math.js'",
+    "'./course.mjs'",
     ";",
-    "const",
-    "resultAdd",
-    "=",
-    "add(5, 3)",
+    "import { setSectionSelection }",
+    "from",
+    "'./sections.mjs'",
     ";",
-    "const",
-    "resultSubtract",
-    "=",
-    "subtract(9, 4)",
+    "import { setTitle, renderSections }",
+    "from",
+    "'./output.mjs'",
     ";",
-    "const",
-    "displayElementAdd",
-    "=",
-    "document.getElementById",
+    "document.querySelector",
     "(",
-    "'add-result'",
+    "'#enrollStudent'",
+    ")",
+    ".addEventListener",
+    "(",
+    "'click'",
+    ",",
+    "function () {",
+    "const",
+    "sectionNum",
+    "=",
+    "Number",
+    "(",
+    "document.querySelector",
+    "(",
+    "'#sectionNumber'",
+    ").value",
     ")",
     ";",
-    "const",
-    "displayElementSubtract",
-    "=",
-    "document.getElementById",
+    "byuiCourse.changeEnrollment",
     "(",
-    "'subtract-result'",
+    "sectionNum",
+    ");",
+    "renderSections(byuiCourse.sections);",
+    "}",
     ")",
     ";",
-    "displayElementAdd.innerHTML",
+    "document.querySelector",
+    "(",
+    "'#dropStudent'",
+    ")",
+    ".addEventListener",
+    "(",
+    "'click'",
+    ",",
+    "function () {",
+    "const",
+    "sectionNum",
     "=",
-    "`Addition Result: ${resultAdd}`",
+    "Number",
+    "(",
+    "document.querySelector",
+    "(",
+    "'#sectionNumber'",
+    ").value",
+    ")",
     ";",
-    "displayElementSubtract.innerHTML",
-    "=",
-    "`Subtraction Result: ${resultSubtract}`",
-    ";"
+    "byuiCourse.changeEnrollment",
+    "(",
+    "sectionNum",
+    ",",
+    "false",
+    ");",
+    "renderSections(byuiCourse.sections);",
+    "}",
+    ")",
+    ";",
+    "setTitle(byuiCourse);",
+    "setSectionSelection(byuiCourse.sections);",
+    "renderSections(byuiCourse.sections);"
 ];
 
+const modulesPage = "../week03/javascript-modules/modules.html";
+
 export const JSExamples = [weatherExampleJS, staticTimestampJS, templateLiteralsJS, esModulesJS];
+export const JSpages = [weatherPage, stampPage, literalsPage, modulesPage];
 
 //CSS only examples
 const animationCSS = [
@@ -469,6 +513,7 @@ const animationCSS = [
     "}",
     "}"
 ];
+const animPage = "";
 
 const separationCSS = [
     ".cards",
@@ -635,6 +680,8 @@ const separationCSS = [
     "}"
 ];
 
+const separationPage = "";
+
 const cardCSS = [
     ".card",
     "{",
@@ -731,6 +778,8 @@ const cardCSS = [
     ";",
     "}"
 ];
+
+const cardPage = "";
 
 const stylingTablesCSS = [
     "*",
@@ -847,4 +896,7 @@ const stylingTablesCSS = [
     "}"
 ];
 
+const tablesPage = "";
+
 export const CSSExamples = [animationCSS, separationCSS, cardCSS, stylingTablesCSS];
+export const CSSpages = [animPage, separationPage, cardPage, tablesPage];
