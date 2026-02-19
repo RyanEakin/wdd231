@@ -21,9 +21,7 @@ const CSSkeywords = [
     "right",
     "bottom",
     "z-index"
-]
-    ;
-const CSSproperties = [];
+];
 const CSSvalues = [
     "0",
     "1rem",
@@ -95,7 +93,7 @@ const JSkeywords = [
     "set"
 ]
     ;
-const JSvalues = [[
+const JSvalues = [
     "null",                     // Represents absence of value
     "undefined",                // Represents unassigned variable
     "true",                     // Boolean true
@@ -125,55 +123,58 @@ const JSvalues = [[
     "new Date()",               // Current date object
     "JSON.parse()",             // JSON parsing
     "JSON.stringify()"          // JSON serialization
-]
+
 ];
 const JSspecial = ['{', '}', ';'];
 const JSstructure = [JSkeywords, JSvalues, JSspecial];
 
 
 export function WordColorer(wordsToColor) {
-    if (!wordsToColor.isArray(arr)) {
+    if (!Array.isArray(wordsToColor)) {
         throw new TypeError('give an array of words to color');
     }
 
     try {
 
-        let listChoice;
-
         let structureChoice;
 
-        let wasFunc;
+        let wasKey = false;
 
-        if (window.location.pathname === "/wdd231/final/styling.html") {
-            listChoice = "CSS";
+        if (window.location.pathname === "/wdd231/final/styling.html") { // if on the css page set as this
             structureChoice = "CSSstructure";
         }
-        else {
-            listChoice = "JS";
+        else {// if on the javascript page set as this
             structureChoice = "JSstructure";
         }
         wordsToColor.forEach(word => {
             let span = document.createElement('span');
             span.textContent = word;
+            span.className = '';
 
             switch (structureChoice) {
-                case structureChoice[0].includes(word):
+                case structureChoice[0].includes(word): // if a keyword set as value class
                     span.className = 'keyword';
-                    wasFunc = true;
-                case structureChoice[1].includes(word):
+                    wasKey = true;
+                    break;
+                case structureChoice[1].includes(word): // if a value set as value class
                     span.className = 'value';
-                case structureChoice[2].includes(word):
+                    break;
+                case structureChoice[2].includes(word): // if special caharacter is there add line break at end
                     const br = document.createElement('br');
                     document.body.appendChild('br');
+                    break;
 
                 default:
-                    if (wasFunc === true) {
+                    if (wasKey) {
                         span.className = 'name';
-                        wasFunc = false;
+                        break;
                     } else {
                         span.className = 'text';
+                        break;
                     }
+                    wasKey = false;
             }
+            document.body.appendChild(span);
         })
     } catch (error) {
         console.error(error.message);

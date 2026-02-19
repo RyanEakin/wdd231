@@ -1,4 +1,3 @@
-//import "../data/codereferences.json";
 //import { WordColorer } from colortext.mjs
 const dealer = document.querySelector('.pageContent');
 

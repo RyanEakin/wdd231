@@ -1,54 +1,60 @@
 {
-    "Example-One": [
-        {
+    "Examples": {
+        "Example-One": {
             "JS": [
                 {
-                    "keyword": "",
-                    "name": "",
+                    "keyword": "function",
+                    "name": "myFunction",
                     "value": [],
                     "body": [
                         {
-                            "keyword": "",
-                            "value": ""
+                            "keyword": "return",
+                            "value": "a + b"
                         }
                     ]
                 },
                 {
-                    "keyword-type": "",
-                    "function-name": "",
-                    "parameter": [],
-                    "function-body": [
+                    "keywordType": "async",
+                    "functionName": "fetchData",
+                    "parameters": [
+                        "url"
+                    ],
+                    "functionBody": [
                         {
-                            "keyword-type": "",
-                            "value": ""
+                            "keywordType": "await",
+                            "value": "response.json()"
                         }
                     ]
                 }
             ],
             "CSS": [
                 {
-                    "Example-One": [
+                    "selectorName": ".container",
+                    "declaredBody": [
                         {
-                            "selector-name": "",
-                            "declared-body": [
-                                {
-                                    "property-name": "",
-                                    "property-value": ""
-                                }
-                            ]
+                            "propertyName": "display",
+                            "propertyValue": "flex"
                         },
                         {
-                            "selector-name": "",
-                            "declared-body": [
-                                {
-                                    "property-name": "",
-                                    "property-value": ""
-                                }
-                            ]
+                            "propertyName": "justify-content",
+                            "propertyValue": "center"
+                        }
+                    ]
+                },
+                {
+                    "selectorName": "#header",
+                    "declaredBody": [
+                        {
+                            "propertyName": "background-color",
+                            "propertyValue": "#fff"
+                        },
+                        {
+                            "propertyName": "height",
+                            "propertyValue": "100px"
                         }
                     ]
                 }
             ]
         }
-    ]
+    }
 }
