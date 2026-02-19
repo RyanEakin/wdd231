@@ -14,6 +14,11 @@
         flex-direction: row;
     }
 
+    .code span {
+        transform: scale(1);
+        transform-origin: 0 0;
+    }
+
     .bar {
         display: none;
     }

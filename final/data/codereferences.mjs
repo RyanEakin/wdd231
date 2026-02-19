@@ -141,7 +141,7 @@ const weatherExampleJS = ["const",
     "// because it allows the first function to work. and THEN the next function to begin work"
 ];
 
-const weatherPage = "../week03/api-learning-activity/weather.html";
+const weatherPage = "../tests/api-learning-activity/weather.html";
 
 const staticTimestampJS = [
     "const",
@@ -273,7 +273,7 @@ const esModulesJS = [
     "renderSections(byuiCourse.sections);"
 ];
 
-const modulesPage = "../week03/javascript-modules/modules.html";
+const modulesPage = "../tests/javascript-modules/modules.html";
 
 export const JSExamples = [weatherExampleJS, staticTimestampJS, templateLiteralsJS, esModulesJS];
 export const JSpages = [weatherPage, stampPage, literalsPage, modulesPage];

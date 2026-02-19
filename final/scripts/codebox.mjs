@@ -31,8 +31,6 @@ const displayExamples = () => {
 
         box.innerHTML = WordColorer(example);
 
-
-
         view.setAttribute('class', "example")
         view.setAttribute('src', pageChoice[index])
         view.setAttribute('title', "Example Website");

@@ -1,9 +1,14 @@
+body {
+    transform: scale(.6);
+    transform-origin: 0 0;
+}
+
 .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
     gap: 16px;
     /* Optional: adds space between cards */
-    padding: 16px;
+
     /* Optional: adds space around the grid */
 }
 
@@ -15,16 +20,15 @@
     display: flex;
     flex-direction: row;
     gap: 16px;
-    margin: 16px;
+
 }
 
 .cards section {
     display: grid;
     gap: 8px;
     background-color: #b9b9cc;
-    margin: 2px;
     border: 1px solid #454592;
-    padding: 1rem;
+    padding: .5rem;
     width: fit-content;
     overflow: hidden;
 }

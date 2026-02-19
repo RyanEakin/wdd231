@@ -58,9 +58,17 @@ h3 {
 
 
 iframe {
-    height: 400px;
     width: 100%;
+    /* Make the iframe take the full width of the container */
+    border: none;
+    /* Remove default border */
+    height: auto;
+    /* Auto height */
+    min-height: 400px;
+    /* Minimum height to avoid being too small */
 }
+
+
 
 ul,
 .border-box p span {
@@ -165,7 +173,7 @@ footer {
     align-self: center;
     padding: 10px;
     margin: 1%;
-    width: 95%;
+    width: 140%;
 }
 
 .desc {
@@ -182,8 +190,14 @@ footer {
 .code {
     background-color: var(--code-box-color);
     width: 100%;
-    overflow: auto;
+    overflow-y: auto;
+
     height: 405px;
+}
+
+.code span {
+    transform: scale(.4);
+    transform-origin: 0 0;
 }
 
 .socialmedia {
