@@ -1,0 +1,34 @@
+body {
+    background-color: rgb(42, 95, 165);
+}
+
+
+
+.keyword {
+    color: blue;
+    /* Color for keywords */
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.value {
+    color: green;
+    /* Color for values */
+    margin-right: 5px;
+}
+
+.name {
+    color: purple;
+    /* Color for names */
+    margin-right: 5px;
+}
+
+.text {
+    color: black;
+    /* Color for basic text */
+    margin-right: 5px;
+}
+
+.special {
+    margin: -5px;
+}

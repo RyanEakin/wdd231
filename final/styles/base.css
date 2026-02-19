@@ -80,19 +80,34 @@ footer {
 
 .keyword {
     color: var(--keyword-color);
+    /* Color for keywords */
+    font-weight: bold;
+    margin-right: 5px;
 }
 
 .value {
     color: var(--value-color);
+    /* Color for values */
+    margin-right: 5px;
 }
 
 .name {
     color: var(--name-color);
+    /* Color for names */
+    margin-right: 5px;
 }
 
 .text {
     color: var(--text-color);
+    /* Color for basic text */
+    margin-right: 5px;
 }
+
+.special {
+    margin: -5px;
+}
+
+
 
 .toggles {
     display: flex;
@@ -159,6 +174,7 @@ footer {
 }
 
 .code {
+    background-color: var(--code-box-color);
     width: 100%;
 }
 

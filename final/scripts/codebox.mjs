@@ -1,66 +1,62 @@
-//import { WordColorer } from colortext.mjs
+import { WordColorer } from "./colortext.mjs";
+import { CSSExamples, JSExamples } from "../data/codereferences.mjs";
 const dealer = document.querySelector('.pageContent');
 
 const displayExamples = () => {
 
-    //example.forEach(() => {
-    const deck = document.createElement('div');
+    let listChoice = (window.location.pathname === "/wdd231/final/styling.html")
+        ? CSSExamples // if it is true, then use this
+        : JSExamples; // if it is false, then use this
 
-    const front = document.createElement('div');
-    const glass = document.createElement('label');
-    const view = document.createElement('article');
+    listChoice.forEach((example) => {
+        const deck = document.createElement('div');
 
-    const back = document.createElement('div');
-    const definer = document.createElement('label');
-    const box = document.createElement('textarea');
+        const front = document.createElement('div');
+        const glass = document.createElement('label');
+        const view = document.createElement('article');
 
-    deck.setAttribute('class', "slice");
+        const back = document.createElement('div');
+        const definer = document.createElement('label');
+        const box = document.createElement('div');
 
-    front.setAttribute('class', "border-box");
+        deck.setAttribute('class', "slice");
 
-    back.setAttribute('class', "border-box");
+        front.setAttribute('class', "border-box");
 
+        back.setAttribute('class', "border-box");
 
-    //if (boxState === "CSS") {
-    //    const box = document.createElement('textarea');
-    //    box.setAttribute('class', "code");
-    //    box.appendChild(document.createTextNode(cssCode));
+        box.innerHTML = WordColorer(example);
+
+        view.setAttribute('class', "example")
+        glass.appendChild(view);
+        glass.setAttribute('aria-label', "visual example");
+        front.appendChild(glass);
+
+        box.setAttribute('class', "code");
+        definer.appendChild(box)
+        definer.setAttribute('aria-label', "code-box");
+        back.appendChild(definer);
+
+        deck.appendChild(front);
+        deck.appendChild(back);
+        dealer.appendChild(deck);
+        //});
+    });
+
+    //document.getElementById('refreshCode').addEventListener('click', function () {
+    // Get the CSS and JavaScript input values
+    //    const cssCode = document.getElementById('cssInput').value;
+    //    const jsCode = document.getElementById('jsInput').value;
+
+    // Add the CSS to the page
+    //    style.appendChild(document.createTextNode(cssCode));
     //    document.head.appendChild(style);
-    //    back.appendChild(box);
-    //}
 
-    //else {
-
-    //}
-    view.setAttribute('class', "example")
-    glass.appendChild(view);
-    glass.setAttribute('aria-label', "visual example");
-    front.appendChild(glass);
-
-    box.setAttribute('class', "code");
-    definer.appendChild(box)
-    definer.setAttribute('aria-label', "code-box");
-    back.appendChild(definer);
-
-    deck.appendChild(front);
-    deck.appendChild(back);
-    dealer.appendChild(deck);
+    // Execute the JavaScript code
+    //    script.appendChild(document.createTextNode(jsCode));
+    //    document.body.appendChild(script);
     //});
 }
-
-//document.getElementById('refreshCode').addEventListener('click', function () {
-// Get the CSS and JavaScript input values
-//    const cssCode = document.getElementById('cssInput').value;
-//    const jsCode = document.getElementById('jsInput').value;
-
-// Add the CSS to the page
-//    style.appendChild(document.createTextNode(cssCode));
-//    document.head.appendChild(style);
-
-// Execute the JavaScript code
-//    script.appendChild(document.createTextNode(jsCode));
-//    document.body.appendChild(script);
-//});
 
 function getmemberData() {
     // Directly use revelations imported from the .mjs file
